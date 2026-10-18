@@ -68,7 +68,7 @@ class GoogleDriveClient {
 				$error_message = $body['error']['message'];
 			} else {
 				/* translators: %d: HTTP response status code */
-				$error_message = sprintf( __( 'Google Drive API error: %d', 'drivevault-for-easy-digital-download' ), $code );
+				$error_message = sprintf( __( 'Google Drive API error: %d', 'drivevault-for-easy-digital-downloads' ), $code );
 			}
 			return new \WP_Error( 'drive_api_error', $error_message, array( 'status' => $code ) );
 		}
@@ -297,7 +297,7 @@ class GoogleDriveClient {
 			'user'            => isset( $data['user'] ) ? $data['user'] : array(),
 			'limit_bytes'     => $limit,
 			'usage_bytes'     => $usage,
-			'limit_formatted' => $limit > 0 ? Formatter::format_bytes( $limit ) : __( 'Unlimited', 'drivevault-for-easy-digital-download' ),
+			'limit_formatted' => $limit > 0 ? Formatter::format_bytes( $limit ) : __( 'Unlimited', 'drivevault-for-easy-digital-downloads' ),
 			'usage_formatted' => Formatter::format_bytes( $usage ),
 			'percent_used'    => $percent,
 		);

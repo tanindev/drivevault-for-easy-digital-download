@@ -54,18 +54,18 @@ class Assets {
 			'assetsUrl'         => DRIVEVAULT_EDD_ASSETS_URL,
 			'isProActive'       => false,
 			'i18n'              => array(
-				'addDriveVaultFile' => __( 'Add DriveVault File', 'drivevault-for-easy-digital-download' ),
-				'chooseFromCloud'   => __( 'Add DriveVault File', 'drivevault-for-easy-digital-download' ),
-				'modalTitle'        => __( 'Select Downloadable Files from Cloud Storage', 'drivevault-for-easy-digital-download' ),
-				'selectFromDrive'   => __( 'Add Google Drive File', 'drivevault-for-easy-digital-download' ),
-				'googleDrive'       => __( 'Google Drive', 'drivevault-for-easy-digital-download' ),
-				'searchPlaceholder' => __( 'Search files in Google Drive...', 'drivevault-for-easy-digital-download' ),
-				'insertFiles'       => __( 'Insert Selected Files', 'drivevault-for-easy-digital-download' ),
-				'cancel'            => __( 'Cancel', 'drivevault-for-easy-digital-download' ),
-				'noFiles'           => __( 'No files found in this folder.', 'drivevault-for-easy-digital-download' ),
-				'connecting'        => __( 'Connecting...', 'drivevault-for-easy-digital-download' ),
-				'connected'         => __( 'Connected', 'drivevault-for-easy-digital-download' ),
-				'disconnected'      => __( 'Disconnected', 'drivevault-for-easy-digital-download' ),
+				'addDriveVaultFile' => __( 'Add DriveVault File', 'drivevault-for-easy-digital-downloads' ),
+				'chooseFromCloud'   => __( 'Add DriveVault File', 'drivevault-for-easy-digital-downloads' ),
+				'modalTitle'        => __( 'Select Downloadable Files from Cloud Storage', 'drivevault-for-easy-digital-downloads' ),
+				'selectFromDrive'   => __( 'Add Google Drive File', 'drivevault-for-easy-digital-downloads' ),
+				'googleDrive'       => __( 'Google Drive', 'drivevault-for-easy-digital-downloads' ),
+				'searchPlaceholder' => __( 'Search files in Google Drive...', 'drivevault-for-easy-digital-downloads' ),
+				'insertFiles'       => __( 'Insert Selected Files', 'drivevault-for-easy-digital-downloads' ),
+				'cancel'            => __( 'Cancel', 'drivevault-for-easy-digital-downloads' ),
+				'noFiles'           => __( 'No files found in this folder.', 'drivevault-for-easy-digital-downloads' ),
+				'connecting'        => __( 'Connecting...', 'drivevault-for-easy-digital-downloads' ),
+				'connected'         => __( 'Connected', 'drivevault-for-easy-digital-downloads' ),
+				'disconnected'      => __( 'Disconnected', 'drivevault-for-easy-digital-downloads' ),
 			),
 		);
 
@@ -108,7 +108,7 @@ class Assets {
 			);
 
 			wp_localize_script( 'drivevault-edd-admin-settings', 'drivevaultData', $localized_data );
-			wp_set_script_translations( 'drivevault-edd-admin-settings', 'drivevault-for-easy-digital-download', DRIVEVAULT_EDD_PATH . 'languages' );
+			wp_set_script_translations( 'drivevault-edd-admin-settings', 'drivevault-for-easy-digital-downloads', DRIVEVAULT_EDD_PATH . 'languages' );
 
 			if ( file_exists( DRIVEVAULT_EDD_PATH . 'assets/build/index.css' ) ) {
 				wp_enqueue_style(
@@ -140,7 +140,7 @@ class Assets {
 			);
 
 			wp_localize_script( 'drivevault-edd-download-picker', 'drivevaultData', $localized_data );
-			wp_set_script_translations( 'drivevault-edd-download-picker', 'drivevault-for-easy-digital-download', DRIVEVAULT_EDD_PATH . 'languages' );
+			wp_set_script_translations( 'drivevault-edd-download-picker', 'drivevault-for-easy-digital-downloads', DRIVEVAULT_EDD_PATH . 'languages' );
 
 			if ( file_exists( DRIVEVAULT_EDD_PATH . 'assets/build/product-picker.css' ) ) {
 				wp_enqueue_style(

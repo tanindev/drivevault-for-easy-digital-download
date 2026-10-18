@@ -70,7 +70,7 @@ class AdminMenu {
 		$settings_link = sprintf(
 			'<a href="%s">%s</a>',
 			esc_url( admin_url( 'edit.php?post_type=download&page=' . DRIVEVAULT_EDD_PAGE_SLUG ) ),
-			esc_html__( 'Settings', 'drivevault-for-easy-digital-download' )
+			esc_html__( 'Settings', 'drivevault-for-easy-digital-downloads' )
 		);
 		array_unshift( $links, $settings_link );
 		return $links;
@@ -84,8 +84,8 @@ class AdminMenu {
 
 		add_submenu_page(
 			'edit.php?post_type=download',
-			__( 'DriveVault', 'drivevault-for-easy-digital-download' ),
-			__( 'DriveVault', 'drivevault-for-easy-digital-download' ),
+			__( 'DriveVault', 'drivevault-for-easy-digital-downloads' ),
+			__( 'DriveVault', 'drivevault-for-easy-digital-downloads' ),
 			$capability,
 			DRIVEVAULT_EDD_PAGE_SLUG,
 			array( $this, 'render_page' )
@@ -140,7 +140,7 @@ class AdminMenu {
 			<div id="drivevault-notices-staging" style="display:none;"></div>
 			<div id="drivevault-admin-root">
 				<div class="drivevault-loading-placeholder" style="padding: 40px; text-align: center;">
-					<p style="font-size: 16px; color: #64748b;"><?php esc_html_e( 'Loading DriveVault for Easy Digital Downloads...', 'drivevault-for-easy-digital-download' ); ?></p>
+					<p style="font-size: 16px; color: #64748b;"><?php esc_html_e( 'Loading DriveVault for Easy Digital Downloads...', 'drivevault-for-easy-digital-downloads' ); ?></p>
 				</div>
 			</div>
 		</div>

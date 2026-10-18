@@ -239,7 +239,7 @@ export const AdminNoticesBell = () => {
 					/* translators: %d: number of admin notices */
 					__(
 						'%d Admin Notice(s) Available',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					),
 					count
 				) }
@@ -269,7 +269,7 @@ export const AdminNoticesBell = () => {
 						<h4>
 							{ __(
 								'Admin Notices',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 						</h4>
 						<span className="drivevault-notices-dropdown-count">
@@ -282,7 +282,7 @@ export const AdminNoticesBell = () => {
 						onClick={ () => setIsOpen( false ) }
 						aria-label={ __(
 							'Close notices',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					>
 						<Icon name="close" size={ 16 } />
@@ -298,7 +298,7 @@ export const AdminNoticesBell = () => {
 					<span>
 						{ __(
 							'Notices collected from WordPress and third-party plugins.',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					</span>
 				</div>

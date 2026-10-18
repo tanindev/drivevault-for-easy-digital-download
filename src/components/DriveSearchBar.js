@@ -56,7 +56,7 @@ export const DriveSearchBar = () => {
 					onChange={ ( e ) => setLocalSearch( e.target.value ) }
 					placeholder={ __(
 						'Search files in Google Drive...',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					) }
 				/>
 				{ localSearch && (
@@ -66,7 +66,7 @@ export const DriveSearchBar = () => {
 						onClick={ () => setLocalSearch( '' ) }
 						title={ __(
 							'Clear search',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					>
 						<Icon name="close" size={ 14 } />
@@ -83,19 +83,19 @@ export const DriveSearchBar = () => {
 					<option value="all">
 						{ __(
 							'All Items',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					</option>
 					<option value="files">
 						{ __(
 							'Files Only',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					</option>
 					<option value="folders">
 						{ __(
 							'Folders Only',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					</option>
 				</select>

@@ -141,7 +141,7 @@ class SettingsController {
 					if ( ! in_array( $val, $allowed_methods, true ) ) {
 						return new WP_Error(
 							'invalid_download_method',
-							__( 'Invalid download method.', 'drivevault-for-easy-digital-download' ),
+							__( 'Invalid download method.', 'drivevault-for-easy-digital-downloads' ),
 							array( 'status' => 400 )
 						);
 					}
@@ -168,7 +168,7 @@ class SettingsController {
 		return new WP_REST_Response( array(
 			'success'  => true,
 			'settings' => $this->format_settings_response( $current ),
-			'message'  => __( 'Settings saved successfully.', 'drivevault-for-easy-digital-download' ),
+			'message'  => __( 'Settings saved successfully.', 'drivevault-for-easy-digital-downloads' ),
 		), 200 );
 	}
 

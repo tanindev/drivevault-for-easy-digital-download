@@ -60,7 +60,7 @@ This plugin connects to external 3rd-party services provided by Google to enable
 == Source Code and Build ==
 
 The unminified React source code for the admin dashboard and product file picker is open source and publicly hosted on GitHub:
-* GitHub Repository: https://github.com/tanindev/drivevault-for-easy-digital-download
+* GitHub Repository: https://github.com/tanindev/drivevault-for-easy-digital-downloads
 
 To compile production assets:
 1. Ensure Node.js (v18+) and npm are installed.
@@ -69,7 +69,7 @@ To compile production assets:
 
 == Installation ==
 
-1. Upload the `drivevault-for-easy-digital-download` folder to the `/wp-content/plugins/` directory.
+1. Upload the `drivevault-for-easy-digital-downloads` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to **Downloads > DriveVault** in your WordPress admin menu.
 4. Enter your Google Cloud OAuth Client ID and Client Secret, then click **Authorize & Connect Google Drive**.

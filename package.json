@@ -1,5 +1,5 @@
 {
-	"name": "drivevault-for-easy-digital-download",
+	"name": "drivevault-for-easy-digital-downloads",
 	"version": "1.0.0",
 	"description": "Seamlessly connect Google Drive with Easy Digital Downloads.",
 	"scripts": {
@@ -17,7 +17,7 @@
 		"includes",
 		"languages",
 		"templates",
-		"drivevault-for-easy-digital-download.php",
+		"drivevault-for-easy-digital-downloads.php",
 		"readme.txt",
 		"uninstall.php"
 	],

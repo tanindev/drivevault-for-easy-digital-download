@@ -195,7 +195,7 @@ const AdminApp = () => {
 						res.message ||
 							__(
 								'Connected to Google Drive successfully!',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							),
 						'success'
 					);
@@ -222,7 +222,7 @@ const AdminApp = () => {
 						err.message ||
 							__(
 								'Failed to complete Google authentication.',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							),
 						'error'
 					);
@@ -254,7 +254,7 @@ const AdminApp = () => {
 				res?.message ||
 					__(
 						'Settings saved successfully.',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					),
 				'success'
 			);
@@ -263,7 +263,7 @@ const AdminApp = () => {
 				err?.message ||
 					__(
 						'Failed to save settings.',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					),
 				'error'
 			);
@@ -275,7 +275,7 @@ const AdminApp = () => {
 			key: 'api',
 			title: __(
 				'API & Connection',
-				'drivevault-for-easy-digital-download'
+				'drivevault-for-easy-digital-downloads'
 			),
 			icon: <Icon name="key" size={ 17 } />,
 		},
@@ -283,7 +283,7 @@ const AdminApp = () => {
 			key: 'downloads',
 			title: __(
 				'Download Settings',
-				'drivevault-for-easy-digital-download'
+				'drivevault-for-easy-digital-downloads'
 			),
 			icon: <Icon name="cloud_download" size={ 17 } />,
 		},
@@ -291,7 +291,7 @@ const AdminApp = () => {
 			key: 'status',
 			title: __(
 				'Quota & Status',
-				'drivevault-for-easy-digital-download'
+				'drivevault-for-easy-digital-downloads'
 			),
 			icon: <Icon name="pie_chart" size={ 17 } />,
 		},
@@ -318,13 +318,13 @@ const AdminApp = () => {
 						<h1>
 							{ __(
 								'Easy Digital Downloads Cloud Storage Integration',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 						</h1>
 						<p className="drivevault-subtitle">
 							{ __(
 								'Connect Google Drive to Easy Digital Downloads.',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 						</p>
 					</div>
@@ -357,7 +357,7 @@ const AdminApp = () => {
 							<p>
 								{ __(
 									'Authenticating with Google Cloud...',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</p>
 						</div>
@@ -412,7 +412,7 @@ const AdminApp = () => {
 										<span>
 											{ __(
 												'Saving...',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</span>
 									</>
@@ -422,7 +422,7 @@ const AdminApp = () => {
 										<span>
 											{ __(
 												'Save Settings',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</span>
 									</>

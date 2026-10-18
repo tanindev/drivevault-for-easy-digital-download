@@ -65,7 +65,7 @@ export const ConnectedAccountsDropdown = ( { statusData, onNavigate } ) => {
 				aria-haspopup="true"
 				title={ __(
 					'Cloud Storage Accounts Status',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				) }
 			>
 				<div className="drivevault-avatar-badge-wrap">
@@ -92,18 +92,18 @@ export const ConnectedAccountsDropdown = ( { statusData, onNavigate } ) => {
 					<span className="drivevault-trigger-label">
 						{ __(
 							'Google Drive',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					</span>
 					<span className="drivevault-trigger-status">
 						{ providers?.google?.isConnected
 							? __(
 									'Connected',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 							  )
 							: __(
 									'Not Connected',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 							  ) }
 					</span>
 				</div>
@@ -137,14 +137,14 @@ export const ConnectedAccountsDropdown = ( { statusData, onNavigate } ) => {
 									{ currentUser?.displayName ||
 										__(
 											'WordPress Admin',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 								</h4>
 								<p className="drivevault-user-email">
 									{ currentUser?.userEmail ||
 										__(
 											'Cloud Storage Overview',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 								</p>
 							</div>
@@ -159,11 +159,11 @@ export const ConnectedAccountsDropdown = ( { statusData, onNavigate } ) => {
 							{ providers?.google?.isConnected
 								? __(
 										'Connected',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 								  )
 								: __(
 										'Not Connected',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 								  ) }
 						</span>
 					</div>
@@ -214,7 +214,7 @@ export const ConnectedAccountsDropdown = ( { statusData, onNavigate } ) => {
 								<span className="drivevault-provider-name">
 									{ __(
 										'Google Drive',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								</span>
 								<p className="drivevault-provider-detail">
@@ -222,11 +222,11 @@ export const ConnectedAccountsDropdown = ( { statusData, onNavigate } ) => {
 										? providers.google.email ||
 										  __(
 												'Active Account',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 										  )
 										: __(
 												'Primary Google Cloud connection',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 										  ) }
 								</p>
 							</div>
@@ -242,11 +242,11 @@ export const ConnectedAccountsDropdown = ( { statusData, onNavigate } ) => {
 									{ providers.google.isConnected
 										? __(
 												'Connected',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 										  )
 										: __(
 												'Not Connected',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 										  ) }
 								</span>
 								<Icon
@@ -269,7 +269,7 @@ export const ConnectedAccountsDropdown = ( { statusData, onNavigate } ) => {
 							<span>
 								{ __(
 									'Quota & Status',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</span>
 						</button>

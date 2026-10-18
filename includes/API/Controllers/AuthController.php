@@ -121,7 +121,7 @@ class AuthController {
 		return new WP_REST_Response( array(
 			'success' => true,
 			'status'  => $this->oauth->get_status(),
-			'message' => __( 'Google Drive account connected successfully!', 'drivevault-for-easy-digital-download' ),
+			'message' => __( 'Google Drive account connected successfully!', 'drivevault-for-easy-digital-downloads' ),
 		), 200 );
 	}
 
@@ -134,7 +134,7 @@ class AuthController {
 		return new WP_REST_Response( array(
 			'success' => true,
 			'status'  => $this->oauth->get_status(),
-			'message' => __( 'Google Drive disconnected.', 'drivevault-for-easy-digital-download' ),
+			'message' => __( 'Google Drive disconnected.', 'drivevault-for-easy-digital-downloads' ),
 		), 200 );
 	}
 }

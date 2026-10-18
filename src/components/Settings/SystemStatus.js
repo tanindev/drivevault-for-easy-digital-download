@@ -25,7 +25,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 			createToast(
 				__(
 					'Google Drive directory cache cleared successfully.',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				),
 				'success'
 			);
@@ -35,7 +35,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 				err.message ||
 					__(
 						'Failed to clear cache.',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					),
 				'error'
 			);
@@ -94,7 +94,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 								<h2>
 									{ __(
 										'Google Drive Storage & Quota',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								</h2>
 								<p className="drivevault-card-header-sub">
@@ -103,13 +103,13 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 												/* translators: %s: Connected Google account email */
 												__(
 													'Connected account: %s',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 												),
 												providers.google.email
 										  )
 										: __(
 												'Live overview of your Google Cloud storage usage and limits.',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 										  ) }
 								</p>
 							</div>
@@ -129,7 +129,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 											<span>
 												{ __(
 													'Clearing...',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 												) }
 											</span>
 										</>
@@ -142,7 +142,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 											<span>
 												{ __(
 													'Flush Cache',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 												) }
 											</span>
 										</>
@@ -161,7 +161,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<span>
 										{ __(
 											'Connect Google Drive',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</span>
 								</button>
@@ -176,7 +176,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 							<p className="drivevault-text-muted">
 								{ __(
 									'Google Drive is not connected yet. Connect your account in API & Connection to view live quota metrics.',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</p>
 							<button
@@ -188,7 +188,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 							>
 								{ __(
 									'Go to Google Drive Settings',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</button>
 						</div>
@@ -199,7 +199,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<span className="drivevault-metric-label">
 										{ __(
 											'Space Used',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</span>
 									<span className="drivevault-metric-val">
@@ -213,7 +213,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<span className="drivevault-metric-label">
 										{ __(
 											'Total Storage',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</span>
 									<span className="drivevault-metric-val">
@@ -227,7 +227,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<span className="drivevault-metric-label">
 										{ __(
 											'Usage Percentage',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</span>
 									<span className="drivevault-metric-val">
@@ -286,13 +286,13 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 					<h2>
 						{ __(
 							'System Environment Check',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					</h2>
 					<p className="drivevault-card-header-sub">
 						{ __(
 							'Server extensions, PHP environment, and Easy Digital Downloads compatibility.',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					</p>
 				</div>
@@ -304,7 +304,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<strong>
 										{ __(
 											'PHP Version',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</strong>
 								</td>
@@ -320,7 +320,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<strong>
 										{ __(
 											'cURL Extension',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</strong>
 								</td>
@@ -332,13 +332,13 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 													/* translators: %s: cURL library version */
 													__(
 														'Enabled (%s)',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													),
 													env.curlVersion
 											  )
 											: __(
 													'Enabled (Required for Cloud APIs)',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  ) }
 									</span>
 								</td>
@@ -348,7 +348,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<strong>
 										{ __(
 											'OpenSSL / HTTPS',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</strong>
 								</td>
@@ -358,11 +358,11 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 										{ env.openssl
 											? __(
 													'Supported',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  )
 											: __(
 													'Checking...',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  ) }
 									</span>
 								</td>
@@ -372,7 +372,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<strong>
 										{ __(
 											'PHP Memory Limit',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</strong>
 								</td>
@@ -388,7 +388,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<strong>
 										{ __(
 											'Max Execution Time',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</strong>
 								</td>
@@ -404,7 +404,7 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 									<strong>
 										{ __(
 											'Easy Digital Downloads Engine',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</strong>
 								</td>
@@ -416,14 +416,14 @@ export const SystemStatus = ( { onNavigate, cloudStatus } ) => {
 													/* translators: %s: Easy Digital Downloads version */
 													__(
 														'Active (v%s)',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													),
 													env.eddVersion ||
 														env.wcVersion
 											  )
 											: __(
 													'Active',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  ) }
 									</span>
 								</td>

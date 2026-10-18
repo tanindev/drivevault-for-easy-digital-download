@@ -38,7 +38,7 @@ class Formatter {
 			return array(
 				'type'  => 'folder',
 				'icon'  => 'folder',
-				'label' => __( 'Folder', 'drivevault-for-easy-digital-download' ),
+				'label' => __( 'Folder', 'drivevault-for-easy-digital-downloads' ),
 			);
 		}
 
@@ -46,7 +46,7 @@ class Formatter {
 			return array(
 				'type'  => 'image',
 				'icon'  => 'image',
-				'label' => __( 'Image', 'drivevault-for-easy-digital-download' ),
+				'label' => __( 'Image', 'drivevault-for-easy-digital-downloads' ),
 			);
 		}
 
@@ -54,7 +54,7 @@ class Formatter {
 			return array(
 				'type'  => 'video',
 				'icon'  => 'movie',
-				'label' => __( 'Video', 'drivevault-for-easy-digital-download' ),
+				'label' => __( 'Video', 'drivevault-for-easy-digital-downloads' ),
 			);
 		}
 
@@ -62,7 +62,7 @@ class Formatter {
 			return array(
 				'type'  => 'audio',
 				'icon'  => 'music_note',
-				'label' => __( 'Audio', 'drivevault-for-easy-digital-download' ),
+				'label' => __( 'Audio', 'drivevault-for-easy-digital-downloads' ),
 			);
 		}
 
@@ -70,7 +70,7 @@ class Formatter {
 			return array(
 				'type'  => 'archive',
 				'icon'  => 'folder_zip',
-				'label' => __( 'Archive / ZIP', 'drivevault-for-easy-digital-download' ),
+				'label' => __( 'Archive / ZIP', 'drivevault-for-easy-digital-downloads' ),
 			);
 		}
 
@@ -78,7 +78,7 @@ class Formatter {
 			return array(
 				'type'  => 'pdf',
 				'icon'  => 'picture_as_pdf',
-				'label' => __( 'PDF Document', 'drivevault-for-easy-digital-download' ),
+				'label' => __( 'PDF Document', 'drivevault-for-easy-digital-downloads' ),
 			);
 		}
 
@@ -86,7 +86,7 @@ class Formatter {
 			return array(
 				'type'  => 'spreadsheet',
 				'icon'  => 'table_chart',
-				'label' => __( 'Spreadsheet', 'drivevault-for-easy-digital-download' ),
+				'label' => __( 'Spreadsheet', 'drivevault-for-easy-digital-downloads' ),
 			);
 		}
 
@@ -94,14 +94,14 @@ class Formatter {
 			return array(
 				'type'  => 'document',
 				'icon'  => 'description',
-				'label' => __( 'Document', 'drivevault-for-easy-digital-download' ),
+				'label' => __( 'Document', 'drivevault-for-easy-digital-downloads' ),
 			);
 		}
 
 		return array(
 			'type'  => 'file',
 			'icon'  => 'insert_drive_file',
-			'label' => __( 'File', 'drivevault-for-easy-digital-download' ),
+			'label' => __( 'File', 'drivevault-for-easy-digital-downloads' ),
 		);
 	}
 }

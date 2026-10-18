@@ -105,7 +105,7 @@ const ToastItem = ( { toast, onDismiss } ) => {
 				onClick={ onDismiss }
 				aria-label={ __(
 					'Dismiss notification',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				) }
 			>
 				<svg
@@ -144,7 +144,7 @@ export const ToastContainer = () => {
 			role="region"
 			aria-label={ __(
 				'Notifications',
-				'drivevault-for-easy-digital-download'
+				'drivevault-for-easy-digital-downloads'
 			) }
 		>
 			{ toasts.map( ( toast ) => (

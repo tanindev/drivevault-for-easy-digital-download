@@ -15,7 +15,7 @@ export const ConnectionBadge = ( { isConnected, accountEmail } ) => {
 				<span className="drivevault-status-text">
 					{ __(
 						'Connected',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					) }
 					{ accountEmail && (
 						<span className="drivevault-status-email">
@@ -38,7 +38,7 @@ export const ConnectionBadge = ( { isConnected, accountEmail } ) => {
 			<span className="drivevault-status-text">
 				{ __(
 					'Not Connected',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				) }
 			</span>
 		</div>

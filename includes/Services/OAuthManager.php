@@ -159,7 +159,7 @@ class OAuthManager {
 	public function get_auth_url() {
 		$creds = $this->get_credentials();
 		if ( empty( $creds['client_id'] ) || empty( $creds['client_secret'] ) ) {
-			return new \WP_Error( 'missing_credentials', __( 'Google Client ID and Client Secret are required.', 'drivevault-for-easy-digital-download' ) );
+			return new \WP_Error( 'missing_credentials', __( 'Google Client ID and Client Secret are required.', 'drivevault-for-easy-digital-downloads' ) );
 		}
 
 		$state = wp_create_nonce( 'drivevault_oauth_state' );
@@ -187,12 +187,12 @@ class OAuthManager {
 	 */
 	public function handle_auth_code( $code, $state = '' ) {
 		if ( empty( $state ) || ! wp_verify_nonce( $state, 'drivevault_oauth_state' ) ) {
-			return new \WP_Error( 'invalid_state', __( 'Invalid or missing authorization state. Please try reconnecting again.', 'drivevault-for-easy-digital-download' ) );
+			return new \WP_Error( 'invalid_state', __( 'Invalid or missing authorization state. Please try reconnecting again.', 'drivevault-for-easy-digital-downloads' ) );
 		}
 
 		$creds = $this->get_credentials();
 		if ( empty( $creds['client_id'] ) || empty( $creds['client_secret'] ) ) {
-			return new \WP_Error( 'missing_credentials', __( 'Missing Google Client ID or Secret.', 'drivevault-for-easy-digital-download' ) );
+			return new \WP_Error( 'missing_credentials', __( 'Missing Google Client ID or Secret.', 'drivevault-for-easy-digital-downloads' ) );
 		}
 
 		$body = array(
@@ -214,7 +214,7 @@ class OAuthManager {
 
 		$data = json_decode( wp_remote_retrieve_body( $response ), true );
 		if ( empty( $data['access_token'] ) ) {
-			$error_desc = ! empty( $data['error_description'] ) ? $data['error_description'] : __( 'Failed to exchange authorization code.', 'drivevault-for-easy-digital-download' );
+			$error_desc = ! empty( $data['error_description'] ) ? $data['error_description'] : __( 'Failed to exchange authorization code.', 'drivevault-for-easy-digital-downloads' );
 			return new \WP_Error( 'token_exchange_failed', $error_desc );
 		}
 
@@ -276,7 +276,7 @@ class OAuthManager {
 	public function get_access_token() {
 		$tokens = $this->get_tokens();
 		if ( empty( $tokens ) || empty( $tokens['access_token'] ) ) {
-			return new \WP_Error( 'not_connected', __( 'Google Drive account is not connected.', 'drivevault-for-easy-digital-download' ) );
+			return new \WP_Error( 'not_connected', __( 'Google Drive account is not connected.', 'drivevault-for-easy-digital-downloads' ) );
 		}
 
 		// Buffer by 60 seconds.
@@ -286,7 +286,7 @@ class OAuthManager {
 
 		// Token is expired, try to refresh.
 		if ( empty( $tokens['refresh_token'] ) ) {
-			return new \WP_Error( 'refresh_token_missing', __( 'Refresh token is missing. Please reconnect your Google Drive account.', 'drivevault-for-easy-digital-download' ) );
+			return new \WP_Error( 'refresh_token_missing', __( 'Refresh token is missing. Please reconnect your Google Drive account.', 'drivevault-for-easy-digital-downloads' ) );
 		}
 
 		return $this->refresh_access_token( $tokens['refresh_token'] );
@@ -301,7 +301,7 @@ class OAuthManager {
 	public function refresh_access_token( $refresh_token ) {
 		$creds = $this->get_credentials();
 		if ( empty( $creds['client_id'] ) || empty( $creds['client_secret'] ) ) {
-			return new \WP_Error( 'missing_credentials', __( 'Missing Google Client ID or Secret.', 'drivevault-for-easy-digital-download' ) );
+			return new \WP_Error( 'missing_credentials', __( 'Missing Google Client ID or Secret.', 'drivevault-for-easy-digital-downloads' ) );
 		}
 
 		$body = array(
@@ -322,7 +322,7 @@ class OAuthManager {
 
 		$data = json_decode( wp_remote_retrieve_body( $response ), true );
 		if ( empty( $data['access_token'] ) ) {
-			$error_desc = ! empty( $data['error_description'] ) ? $data['error_description'] : __( 'Failed to refresh Google Drive token.', 'drivevault-for-easy-digital-download' );
+			$error_desc = ! empty( $data['error_description'] ) ? $data['error_description'] : __( 'Failed to refresh Google Drive token.', 'drivevault-for-easy-digital-downloads' );
 			return new \WP_Error( 'token_refresh_failed', $error_desc );
 		}
 

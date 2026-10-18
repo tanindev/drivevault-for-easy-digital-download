@@ -11,7 +11,7 @@ export const DriveBreadcrumbs = ( { onRefresh } ) => {
 					id: 'root',
 					name: __(
 						'My Drive',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					),
 				},
 			],
@@ -46,7 +46,7 @@ export const DriveBreadcrumbs = ( { onRefresh } ) => {
 				className="drivevault-breadcrumbs-list"
 				aria-label={ __(
 					'Breadcrumbs',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				) }
 			>
 				{ breadcrumbs.map( ( crumb, idx ) => {
@@ -95,7 +95,7 @@ export const DriveBreadcrumbs = ( { onRefresh } ) => {
 					disabled={ isLoading }
 					title={ __(
 						'Refresh folder',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					) }
 				>
 					<Icon

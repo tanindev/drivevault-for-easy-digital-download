@@ -26,13 +26,13 @@ export const DownloadSettings = ( {
 					<h2>
 						{ __(
 							'Download & Delivery Options',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					</h2>
 					<p className="drivevault-card-header-sub">
 						{ __(
 							'Configure how customer downloadable files are streamed and cached.',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					</p>
 				</div>
@@ -43,13 +43,13 @@ export const DownloadSettings = ( {
 							<label className="drivevault-section-sublabel">
 								{ __(
 									'Customer Download Delivery Method',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</label>
 							<p className="drivevault-section-desc">
 								{ __(
 									'Choose how customer download requests are processed and delivered after purchase verification.',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</p>
 
@@ -111,13 +111,13 @@ export const DownloadSettings = ( {
 												<h4 className="drivevault-delivery-card__title">
 													{ __(
 														'Direct Cloud Redirect',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</h4>
 												<span className="drivevault-delivery-card__speed">
 													{ __(
 														'Fast Cloud CDN Transfer',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</span>
 											</div>
@@ -140,14 +140,14 @@ export const DownloadSettings = ( {
 													</svg>
 													{ __(
 														'Active Method',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</span>
 											) : (
 												<span className="drivevault-card-badge drivevault-card-badge--ready">
 													{ __(
 														'Select',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</span>
 											) }
@@ -157,7 +157,7 @@ export const DownloadSettings = ( {
 									<p className="drivevault-delivery-card__description">
 										{ __(
 											'Customers are securely verified by Easy Digital Downloads and redirected directly to time-limited signed links from Google Drive.',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</p>
 
@@ -178,7 +178,7 @@ export const DownloadSettings = ( {
 											<span>
 												{ __(
 													'Zero web server bandwidth & memory load',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 												) }
 											</span>
 										</div>
@@ -198,7 +198,7 @@ export const DownloadSettings = ( {
 											<span>
 												{ __(
 													'Direct high-speed transfer via cloud edge',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 												) }
 											</span>
 										</div>
@@ -218,7 +218,7 @@ export const DownloadSettings = ( {
 											<span>
 												{ __(
 													'Standard across all active cloud providers',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 												) }
 											</span>
 										</div>
@@ -300,13 +300,13 @@ export const DownloadSettings = ( {
 													<h4 className="drivevault-delivery-card__title">
 														{ __(
 															'Server-Side Proxy Streaming',
-															'drivevault-for-easy-digital-download'
+															'drivevault-for-easy-digital-downloads'
 														) }
 													</h4>
 													<span className="drivevault-delivery-card__speed">
 														{ __(
 															'Full Link Concealment',
-															'drivevault-for-easy-digital-download'
+															'drivevault-for-easy-digital-downloads'
 														) }
 													</span>
 												</div>
@@ -330,14 +330,14 @@ export const DownloadSettings = ( {
 														</svg>
 														{ __(
 															'Active Method',
-															'drivevault-for-easy-digital-download'
+															'drivevault-for-easy-digital-downloads'
 														) }
 													</span>
 												) : (
 													<span className="drivevault-card-badge drivevault-card-badge--ready">
 														{ __(
 															'Select',
-															'drivevault-for-easy-digital-download'
+															'drivevault-for-easy-digital-downloads'
 														) }
 													</span>
 												) }
@@ -347,7 +347,7 @@ export const DownloadSettings = ( {
 										<p className="drivevault-delivery-card__description">
 											{ __(
 												'Streams downloads in chunks directly through your WordPress server, completely hiding external cloud URLs and supporting resumable transfers.',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</p>
 
@@ -368,7 +368,7 @@ export const DownloadSettings = ( {
 												<span>
 													{ __(
 														'100% URL concealment (never exposes drive links)',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</span>
 											</div>
@@ -388,7 +388,7 @@ export const DownloadSettings = ( {
 												<span>
 													{ __(
 														'HTTP Range 206 chunked resumable downloads',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</span>
 											</div>
@@ -408,7 +408,7 @@ export const DownloadSettings = ( {
 												<span>
 													{ __(
 														'Configurable 1–32 MB memory buffer size',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</span>
 											</div>
@@ -423,13 +423,13 @@ export const DownloadSettings = ( {
 						<TextareaControl
 							label={ __(
 								'Cloud Storage Disconnected / Inaccessible Error Message',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 							value={
 								settings?.error_message_disconnected ??
 								__(
 									'Error accessing file: Cloud storage account is not connected.',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								)
 							}
 							onChange={ ( val ) =>
@@ -438,11 +438,11 @@ export const DownloadSettings = ( {
 							rows={ 2 }
 							help={ __(
 								'Message displayed to customers when attempting to download a cloud file while the storage provider is disconnected or inaccessible.',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 							placeholder={ __(
 								'Error accessing file: Cloud storage account is not connected.',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 						/>
 
@@ -455,7 +455,7 @@ export const DownloadSettings = ( {
 								<RangeControl
 									label={ __(
 										'Stream Chunk Buffer Size (MB)',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 									value={ settings?.chunk_size_mb || 8 }
 									onChange={ ( val ) =>
@@ -465,7 +465,7 @@ export const DownloadSettings = ( {
 									max={ 32 }
 									help={ __(
 										'Memory buffer size in megabytes used when streaming large files from cloud storage.',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								/>
 								<hr className="drivevault-divider" />
@@ -477,7 +477,7 @@ export const DownloadSettings = ( {
 								<ToggleControl
 									label={ __(
 										'Enable Shared / Team Drives',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 									checked={ !! settings?.enable_shared_drive }
 									onChange={ ( val ) =>
@@ -485,7 +485,7 @@ export const DownloadSettings = ( {
 									}
 									help={ __(
 										'Allow browsing and linking downloadable files from Google Workspace Shared Drives (Team Drives).',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								/>
 								<hr className="drivevault-divider" />
@@ -495,7 +495,7 @@ export const DownloadSettings = ( {
 						<RangeControl
 							label={ __(
 								'Drive Directory Cache TTL (Minutes)',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 							value={ Math.round(
 								( settings?.cache_ttl || 600 ) / 60
@@ -507,7 +507,7 @@ export const DownloadSettings = ( {
 							max={ 120 }
 							help={ __(
 								'How long Google Drive file listings are cached in WordPress transients before refetching.',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 						/>
 
@@ -518,7 +518,7 @@ export const DownloadSettings = ( {
 								<RangeControl
 									label={ __(
 										'Download Activity Log Retention (Days)',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 									value={
 										typeof settings?.log_retention_days !==
@@ -535,7 +535,7 @@ export const DownloadSettings = ( {
 									max={ 365 }
 									help={ __(
 										'Number of days download activity and audit logs are retained before automatic cleanup by daily WP-Cron.',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								/>
 
@@ -544,7 +544,7 @@ export const DownloadSettings = ( {
 								<ToggleControl
 									label={ __(
 										'Anonymize Customer Download IP Addresses (GDPR Compliance)',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 									checked={
 										!! settings?.anonymize_download_ips
@@ -557,7 +557,7 @@ export const DownloadSettings = ( {
 									}
 									help={ __(
 										'Mask the last octet of customer IP addresses in download activity logs for privacy and GDPR compliance.',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								/>
 							</>
@@ -568,7 +568,7 @@ export const DownloadSettings = ( {
 						<ToggleControl
 							label={ __(
 								'Erase Plugin Data on Uninstall',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 							checked={ !! settings?.delete_data_on_uninstall }
 							onChange={ ( val ) =>
@@ -576,7 +576,7 @@ export const DownloadSettings = ( {
 							}
 							help={ __(
 								'Check to delete stored Google tokens, settings, and download logs if the plugin is deleted.',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 						/>
 					</div>

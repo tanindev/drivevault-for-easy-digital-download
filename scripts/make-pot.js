@@ -2,7 +2,7 @@ const fs = require( 'fs' );
 const path = require( 'path' );
 const { execSync } = require( 'child_process' );
 
-const pluginSlug = 'drivevault-for-easy-digital-download';
+const pluginSlug = 'drivevault-for-easy-digital-downloads';
 const rootDir = path.resolve( __dirname, '..' );
 const languagesDir = path.resolve( rootDir, 'languages' );
 const potFile = path.resolve( languagesDir, `${ pluginSlug }.pot` );
@@ -45,7 +45,7 @@ if ( ! generatedWithWpCli ) {
 
 		// Regex for standard WordPress translation functions: __, _e, esc_html__, esc_html_e, esc_attr__, esc_attr_e, _x, _ex
 		const regex =
-			/\b(?:__|_e|esc_html__|esc_html_e|esc_attr__|esc_attr_e)\s*\(\s*(['"])((?:(?!\1)[^\\]|\\.)*)\1\s*,\s*(['"])drivevault-for-easy-digital-download\3\s*\)/g;
+			/\b(?:__|_e|esc_html__|esc_html_e|esc_attr__|esc_attr_e)\s*\(\s*(['"])((?:(?!\1)[^\\]|\\.)*)\1\s*,\s*(['"])drivevault-for-easy-digital-downloads\3\s*\)/g;
 
 		lines.forEach( ( line, index ) => {
 			let match;
@@ -93,7 +93,7 @@ if ( ! generatedWithWpCli ) {
 msgid ""
 msgstr ""
 "Project-Id-Version: DriveVault for Easy Digital Downloads 1.0.0\\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/drivevault-for-easy-digital-download\\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/drivevault-for-easy-digital-downloads\\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\\n"
 "Language-Team: LANGUAGE <LL@li.org>\\n"
 "MIME-Version: 1.0\\n"

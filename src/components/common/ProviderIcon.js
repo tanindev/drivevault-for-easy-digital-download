@@ -3,12 +3,12 @@ import { __ } from '@wordpress/i18n';
 import Icon from './Icon';
 
 export const PROVIDER_NAMES = {
-	gdrive: __( 'Google Drive', 'drivevault-for-easy-digital-download' ),
-	google: __( 'Google Drive', 'drivevault-for-easy-digital-download' ),
-	dropbox: __( 'Dropbox', 'drivevault-for-easy-digital-download' ),
-	onedrive: __( 'OneDrive', 'drivevault-for-easy-digital-download' ),
-	s3: __( 'Amazon S3', 'drivevault-for-easy-digital-download' ),
-	amazon: __( 'Amazon S3', 'drivevault-for-easy-digital-download' ),
+	gdrive: __( 'Google Drive', 'drivevault-for-easy-digital-downloads' ),
+	google: __( 'Google Drive', 'drivevault-for-easy-digital-downloads' ),
+	dropbox: __( 'Dropbox', 'drivevault-for-easy-digital-downloads' ),
+	onedrive: __( 'OneDrive', 'drivevault-for-easy-digital-downloads' ),
+	s3: __( 'Amazon S3', 'drivevault-for-easy-digital-downloads' ),
+	amazon: __( 'Amazon S3', 'drivevault-for-easy-digital-downloads' ),
 };
 
 /**
@@ -24,7 +24,7 @@ export const ProviderIcon = ( { provider, size = 18, className = '' } ) => {
 	const providerName =
 		PROVIDER_NAMES[ key ] ||
 		provider ||
-		__( 'Cloud Storage', 'drivevault-for-easy-digital-download' );
+		__( 'Cloud Storage', 'drivevault-for-easy-digital-downloads' );
 
 	let iconSvg = null;
 	let badgeClass = 'drivevault-provider-icon-badge--default';

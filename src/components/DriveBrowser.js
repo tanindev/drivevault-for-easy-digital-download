@@ -53,7 +53,7 @@ export const DriveBrowser = ( { allowMultiSelect = true } ) => {
 				<p className="drivevault-error-title">
 					{ __(
 						'Error loading files',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					) }
 				</p>
 				<p className="drivevault-error-msg">{ error }</p>
@@ -68,13 +68,13 @@ export const DriveBrowser = ( { allowMultiSelect = true } ) => {
 				<p className="drivevault-empty-title">
 					{ __(
 						'No files or folders found',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					) }
 				</p>
 				<p className="drivevault-empty-desc">
 					{ __(
 						'This folder is empty or no files matched your search filter.',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					) }
 				</p>
 			</div>
@@ -91,19 +91,19 @@ export const DriveBrowser = ( { allowMultiSelect = true } ) => {
 						<th className="drivevault-col-name">
 							{ __(
 								'Name',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 						</th>
 						<th className="drivevault-col-type">
 							{ __(
 								'Type',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 						</th>
 						<th className="drivevault-col-size">
 							{ __(
 								'Size',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							) }
 						</th>
 					</tr>

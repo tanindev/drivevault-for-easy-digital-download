@@ -25,7 +25,7 @@ const renderStatusPill = ( container, data ) => {
 					data.web_view_link
 			  }" target="_blank" rel="noreferrer" class="drivevault-row-preview-link" title="${ __(
 					'Preview file in Google Drive',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 			  ) }">Preview ↗</a>`
 			: '';
 		container.innerHTML = `
@@ -33,7 +33,7 @@ const renderStatusPill = ( container, data ) => {
 				<span class="drivevault-row-pill-dot"></span>
 				<span>${ __(
 					'Verified',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				) }${ sizeText }</span>
 			</span>
 			${ previewHtml }
@@ -44,13 +44,13 @@ const renderStatusPill = ( container, data ) => {
 				data.message ||
 				__(
 					'File not found on Google Drive',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				)
 			}">
 				<span class="drivevault-row-pill-dot"></span>
 				<span>${ __(
 					'Missing / Deleted',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				) }</span>
 			</span>
 		`;
@@ -60,11 +60,11 @@ const renderStatusPill = ( container, data ) => {
 				data.message ||
 				__(
 					'Permission denied',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				)
 			}">
 				<span class="drivevault-row-pill-dot"></span>
-				<span>${ __( 'Access Denied', 'drivevault-for-easy-digital-download' ) }</span>
+				<span>${ __( 'Access Denied', 'drivevault-for-easy-digital-downloads' ) }</span>
 			</span>
 		`;
 	} else if ( data.status === 'checking' ) {
@@ -73,7 +73,7 @@ const renderStatusPill = ( container, data ) => {
 				<span class="drivevault-row-pill-spinner"></span>
 				<span>${ __(
 					'Checking link...',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				) }</span>
 			</span>
 		`;
@@ -81,7 +81,7 @@ const renderStatusPill = ( container, data ) => {
 		container.innerHTML = `
 			<span class="drivevault-row-pill drivevault-row-pill--cloud">
 				<span class="drivevault-row-pill-dot"></span>
-				<span>${ __( 'Cloud File', 'drivevault-for-easy-digital-download' ) }</span>
+				<span>${ __( 'Cloud File', 'drivevault-for-easy-digital-downloads' ) }</span>
 			</span>
 		`;
 	}
@@ -176,7 +176,7 @@ const ProductPickerApp = () => {
 						window.drivevaultData?.i18n?.addDriveVaultFile ||
 						__(
 							'Add DriveVault File',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						);
 					const btn = document.createElement( 'button' );
 					btn.type = 'button';
@@ -217,7 +217,7 @@ const ProductPickerApp = () => {
 						window.drivevaultData?.i18n?.addDriveVaultFile ||
 						__(
 							'Add DriveVault File',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						);
 					const btn = document.createElement( 'button' );
 					btn.type = 'button';
@@ -254,7 +254,7 @@ const ProductPickerApp = () => {
 						window.drivevaultData?.i18n?.addDriveVaultFile ||
 						__(
 							'Add DriveVault File',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						);
 					const btn = document.createElement( 'button' );
 					btn.type = 'button';
@@ -321,7 +321,7 @@ const ProductPickerApp = () => {
 			alert(
 				__(
 					'jQuery is required to insert downloadable files.',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				)
 			);
 			return;
@@ -374,7 +374,7 @@ const ProductPickerApp = () => {
 					file.name ||
 					__(
 						'Cloud Storage File',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					);
 				const fileUrl = formatCloudUrl( file );
 
@@ -468,7 +468,7 @@ const ProductPickerApp = () => {
 				file.name ||
 				__(
 					'Cloud Storage File',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				);
 			const fileUrl = formatCloudUrl( file );
 

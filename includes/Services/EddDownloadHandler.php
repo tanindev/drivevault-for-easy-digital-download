@@ -75,8 +75,8 @@ class EddDownloadHandler {
 					edd_die_file_download_limit_reached();
 				}
 				wp_die(
-					esc_html__( 'Sorry, you have reached your download limit for this item.', 'drivevault-for-easy-digital-download' ),
-					esc_html__( 'Download Limit Reached', 'drivevault-for-easy-digital-download' ),
+					esc_html__( 'Sorry, you have reached your download limit for this item.', 'drivevault-for-easy-digital-downloads' ),
+					esc_html__( 'Download Limit Reached', 'drivevault-for-easy-digital-downloads' ),
 					403
 				);
 			}
@@ -87,7 +87,7 @@ class EddDownloadHandler {
 		if ( is_wp_error( $file_meta ) ) {
 			$error_message = sprintf(
 				/* translators: %s: Error message from Google Drive API */
-				__( 'Error accessing Google Drive file: %s', 'drivevault-for-easy-digital-download' ),
+				__( 'Error accessing Google Drive file: %s', 'drivevault-for-easy-digital-downloads' ),
 				$file_meta->get_error_message()
 			);
 
@@ -107,7 +107,7 @@ class EddDownloadHandler {
 
 			$this->render_error_page(
 				$error_message,
-				__( 'Download Unavailable', 'drivevault-for-easy-digital-download' ),
+				__( 'Download Unavailable', 'drivevault-for-easy-digital-downloads' ),
 				502
 			);
 		}
@@ -196,8 +196,8 @@ class EddDownloadHandler {
 			$token = $this->drive->get_access_token();
 			if ( is_wp_error( $token ) ) {
 				$this->render_error_page(
-					__( 'Could not generate secure Google Drive download link. Please reconnect your account.', 'drivevault-for-easy-digital-download' ),
-					__( 'Download Error', 'drivevault-for-easy-digital-download' ),
+					__( 'Could not generate secure Google Drive download link. Please reconnect your account.', 'drivevault-for-easy-digital-downloads' ),
+					__( 'Download Error', 'drivevault-for-easy-digital-downloads' ),
 					500
 				);
 			}
@@ -276,8 +276,8 @@ class EddDownloadHandler {
 		$zip_file = wp_tempnam( 'dv_edd_folder_', $temp_dir );
 		if ( ! $zip_file ) {
 			$this->render_error_page(
-				__( 'Could not create temporary archive file.', 'drivevault-for-easy-digital-download' ),
-				__( 'Download Error', 'drivevault-for-easy-digital-download' ),
+				__( 'Could not create temporary archive file.', 'drivevault-for-easy-digital-downloads' ),
+				__( 'Download Error', 'drivevault-for-easy-digital-downloads' ),
 				500
 			);
 		}
@@ -286,8 +286,8 @@ class EddDownloadHandler {
 		if ( true !== $zip->open( $zip_file, \ZipArchive::CREATE | \ZipArchive::OVERWRITE ) ) {
 			wp_delete_file( $zip_file );
 			$this->render_error_page(
-				__( 'Failed to initialize ZIP archive.', 'drivevault-for-easy-digital-download' ),
-				__( 'Download Error', 'drivevault-for-easy-digital-download' ),
+				__( 'Failed to initialize ZIP archive.', 'drivevault-for-easy-digital-downloads' ),
+				__( 'Download Error', 'drivevault-for-easy-digital-downloads' ),
 				500
 			);
 		}
@@ -302,8 +302,8 @@ class EddDownloadHandler {
 			$zip->close();
 			wp_delete_file( $zip_file );
 			$this->render_error_page(
-				__( 'The requested folder is empty or inaccessible.', 'drivevault-for-easy-digital-download' ),
-				__( 'Folder Empty', 'drivevault-for-easy-digital-download' ),
+				__( 'The requested folder is empty or inaccessible.', 'drivevault-for-easy-digital-downloads' ),
+				__( 'Folder Empty', 'drivevault-for-easy-digital-downloads' ),
 				404
 			);
 		}
@@ -313,8 +313,8 @@ class EddDownloadHandler {
 			$zip->close();
 			wp_delete_file( $zip_file );
 			$this->render_error_page(
-				__( 'Authentication error while reading folder files.', 'drivevault-for-easy-digital-download' ),
-				__( 'Download Error', 'drivevault-for-easy-digital-download' ),
+				__( 'Authentication error while reading folder files.', 'drivevault-for-easy-digital-downloads' ),
+				__( 'Download Error', 'drivevault-for-easy-digital-downloads' ),
 				500
 			);
 		}
@@ -341,8 +341,8 @@ class EddDownloadHandler {
 		if ( ! file_exists( $zip_file ) || 0 === filesize( $zip_file ) ) {
 			wp_delete_file( $zip_file );
 			$this->render_error_page(
-				__( 'Failed to compile folder contents into ZIP archive.', 'drivevault-for-easy-digital-download' ),
-				__( 'Download Error', 'drivevault-for-easy-digital-download' ),
+				__( 'Failed to compile folder contents into ZIP archive.', 'drivevault-for-easy-digital-downloads' ),
+				__( 'Download Error', 'drivevault-for-easy-digital-downloads' ),
 				500
 			);
 		}

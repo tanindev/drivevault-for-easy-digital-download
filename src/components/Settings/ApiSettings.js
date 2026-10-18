@@ -41,7 +41,7 @@ export const ApiSettings = ( {
 				err.message ||
 					__(
 						'Failed to generate Google Auth URL. Ensure Client ID & Secret are saved.',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					),
 				'error'
 			);
@@ -54,7 +54,7 @@ export const ApiSettings = ( {
 			! window.confirm(
 				__(
 					'Are you sure you want to disconnect your Google Drive account?',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				)
 			)
 		) {
@@ -71,7 +71,7 @@ export const ApiSettings = ( {
 			createToast(
 				__(
 					'Google Drive disconnected successfully.',
-					'drivevault-for-easy-digital-download'
+					'drivevault-for-easy-digital-downloads'
 				),
 				'success'
 			);
@@ -80,7 +80,7 @@ export const ApiSettings = ( {
 				err.message ||
 					__(
 						'Failed to disconnect Google Drive.',
-						'drivevault-for-easy-digital-download'
+						'drivevault-for-easy-digital-downloads'
 					),
 				'error'
 			);
@@ -112,21 +112,21 @@ export const ApiSettings = ( {
 							<h3>
 								{ __(
 									'Google Drive Account Connection',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</h3>
 							{ isConnected ? (
 								<p className="drivevault-connected-email">
 									{ __(
 										'Connected Account:',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }{ ' ' }
 									<strong className="drivevault-email-tag">
 										{ connectionStatus.account_email ||
 											connectionStatus.account_name ||
 											__(
 												'Active Account',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 									</strong>
 								</p>
@@ -134,7 +134,7 @@ export const ApiSettings = ( {
 								<p className="drivevault-auth-desc">
 									{ __(
 										'Connect your Google Cloud project to allow browsing and attaching Drive files to Easy Digital Downloads products.',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								</p>
 							) }
@@ -155,7 +155,7 @@ export const ApiSettings = ( {
 										<span>
 											{ __(
 												'Disconnecting...',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</span>
 									</>
@@ -165,7 +165,7 @@ export const ApiSettings = ( {
 										<span>
 											{ __(
 												'Disconnect Account',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</span>
 									</>
@@ -189,7 +189,7 @@ export const ApiSettings = ( {
 										<span>
 											{ __(
 												'Connecting...',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</span>
 									</>
@@ -199,7 +199,7 @@ export const ApiSettings = ( {
 										<span>
 											{ __(
 												'Authorize & Connect Google Drive',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</span>
 									</>
@@ -218,13 +218,13 @@ export const ApiSettings = ( {
 							<h2>
 								{ __(
 									'Google Cloud API Credentials',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</h2>
 							<p className="drivevault-card-header-sub">
 								{ __(
 									'Configure OAuth 2.0 Client credentials from your Google Cloud Console project.',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</p>
 						</div>
@@ -247,11 +247,11 @@ export const ApiSettings = ( {
 								{ showInstructions
 									? __(
 											'Hide Setup Guide',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 									  )
 									: __(
 											'View Setup Guide',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 									  ) }
 							</span>
 						</button>
@@ -264,7 +264,7 @@ export const ApiSettings = ( {
 							<h4>
 								{ __(
 									'Step-by-Step Setup Guide:',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</h4>
 							<ol className="drivevault-guide-steps">
@@ -332,11 +332,11 @@ export const ApiSettings = ( {
 											{ copied
 												? __(
 														'Copied!',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 												  )
 												: __(
 														'Copy URI',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 												  ) }
 										</ClipboardButton>
 									</div>
@@ -360,7 +360,7 @@ export const ApiSettings = ( {
 							<label className="drivevault-label">
 								{ __(
 									'Google Client ID',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 								<span className="drivevault-required">*</span>
 							</label>
@@ -376,7 +376,7 @@ export const ApiSettings = ( {
 							<span className="drivevault-help-text">
 								{ __(
 									'Your OAuth 2.0 Client ID generated in Google Cloud Console.',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</span>
 						</div>
@@ -385,7 +385,7 @@ export const ApiSettings = ( {
 							<label className="drivevault-label">
 								{ __(
 									'Google Client Secret',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 								<span className="drivevault-required">*</span>
 							</label>
@@ -420,14 +420,14 @@ export const ApiSettings = ( {
 										? '••••••••••••••••••••'
 										: __(
 												'Enter your Google Client Secret',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 										  )
 								}
 							/>
 							<span className="drivevault-help-text">
 								{ __(
 									'Your OAuth 2.0 Client Secret generated in Google Cloud Console.',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</span>
 						</div>
@@ -436,7 +436,7 @@ export const ApiSettings = ( {
 							<label className="drivevault-label">
 								{ __(
 									'Authorized Redirect URI',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</label>
 							<div className="drivevault-input-with-button">
@@ -462,11 +462,11 @@ export const ApiSettings = ( {
 										{ copied
 											? __(
 													'Copied!',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  )
 											: __(
 													'Copy URI',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  ) }
 									</span>
 								</ClipboardButton>
@@ -474,7 +474,7 @@ export const ApiSettings = ( {
 							<span className="drivevault-help-text">
 								{ __(
 									'Must match the Authorized redirect URI in your Google Cloud Console credentials.',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</span>
 						</div>

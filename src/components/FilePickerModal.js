@@ -140,7 +140,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 	const providers = [
 		{
 			id: 'gdrive',
-			name: __( 'Google Drive', 'drivevault-for-easy-digital-download' ),
+			name: __( 'Google Drive', 'drivevault-for-easy-digital-downloads' ),
 			icon: GOOGLE_DRIVE_SVG,
 			avatarBg: '#eff6ff',
 			isConnected: isGoogleConnected,
@@ -148,10 +148,10 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 				window.drivevaultData?.gdriveSettingsUrl ||
 				'admin.php?page=drivevault-settings',
 			rootTarget: 'root',
-			rootName: __( 'My Drive', 'drivevault-for-easy-digital-download' ),
+			rootName: __( 'My Drive', 'drivevault-for-easy-digital-downloads' ),
 			searchPlaceholder: __(
 				'Search files in Google Drive...',
-				'drivevault-for-easy-digital-download'
+				'drivevault-for-easy-digital-downloads'
 			),
 		},
 	];
@@ -504,7 +504,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 							/* translators: %s: provider name */
 							__(
 								'Failed to load files from %s.',
-								'drivevault-for-easy-digital-download'
+								'drivevault-for-easy-digital-downloads'
 							),
 							currentProvider.name
 						)
@@ -684,7 +684,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 							<h2>
 								{ __(
 									'Select Downloadable Files from Cloud Storage',
-									'drivevault-for-easy-digital-download'
+									'drivevault-for-easy-digital-downloads'
 								) }
 							</h2>
 						</div>
@@ -696,7 +696,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 						onClick={ onClose }
 						aria-label={ __(
 							'Close modal',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						) }
 					>
 						<Icon name="close" size={ 20 } />
@@ -737,11 +737,11 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 											prov.isConnected
 												? __(
 														'Connected',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 												  )
 												: __(
 														'Not Connected - Click to configure',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 												  )
 										}
 									/>
@@ -775,7 +775,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 									/* translators: %s: provider name */
 									__(
 										'%s is Not Connected',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									),
 									currentProvider.name
 								) }
@@ -785,7 +785,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 									/* translators: %s: provider name */
 									__(
 										'Please connect and authorize your %s account in DriveVault settings to browse and select files.',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									),
 									currentProvider.name
 								) }
@@ -802,7 +802,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 										/* translators: %s: provider name */
 										__(
 											'Configure %s',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										),
 										currentProvider.name
 									) }
@@ -819,7 +819,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 									className="drivevault-breadcrumbs-list"
 									aria-label={ __(
 										'Breadcrumbs',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								>
 									{ breadcrumbs.map( ( crumb, idx ) => {
@@ -881,7 +881,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 										disabled={ isLoading }
 										title={ __(
 											'Refresh folder',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									>
 										<Icon
@@ -924,7 +924,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 											}
 											title={ __(
 												'Clear search',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										>
 											<Icon name="close" size={ 14 } />
@@ -939,35 +939,35 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 											id: 'all',
 											label: __(
 												'All Files',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											),
 										},
 										{
 											id: 'docs',
 											label: __(
 												'Documents',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											),
 										},
 										{
 											id: 'archives',
 											label: __(
 												'Archives',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											),
 										},
 										{
 											id: 'media',
 											label: __(
 												'Media',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											),
 										},
 										{
 											id: 'images',
 											label: __(
 												'Images',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											),
 										},
 									].map( ( cat ) => (
@@ -995,14 +995,14 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 										onClick={ handleSelectAllVisible }
 										title={ __(
 											'Select all visible downloadable files',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									>
 										<Icon name="check" size={ 13 } />
 										<span>
 											{ __(
 												'Select All',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</span>
 									</button>
@@ -1015,31 +1015,31 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 										}
 										aria-label={ __(
 											'Sort files',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									>
 										<option value="name_asc">
 											{ __(
 												'Name (A to Z)',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</option>
 										<option value="name_desc">
 											{ __(
 												'Name (Z to A)',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</option>
 										<option value="size_desc">
 											{ __(
 												'Size (Largest)',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</option>
 										<option value="size_asc">
 											{ __(
 												'Size (Smallest)',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</option>
 									</select>
@@ -1061,7 +1061,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 									<p className="drivevault-error-title">
 										{ __(
 											'Error loading files',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</p>
 									<p className="drivevault-error-msg">
@@ -1075,7 +1075,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 									>
 										{ __(
 											'Try Again',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</button>
 								</div>
@@ -1090,23 +1090,23 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 									<p className="drivevault-empty-title">
 										{ __(
 											'No files or folders found',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</p>
 									<p className="drivevault-empty-desc">
 										{ searchQuery
 											? __(
 													'No items matched your search query.',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  )
 											: activeCategory !== 'all'
 											? __(
 													'No files match this category filter in this folder.',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  )
 											: __(
 													'This folder is empty.',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  ) }
 									</p>
 								</div>
@@ -1120,19 +1120,19 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 												<th className="drivevault-col-name">
 													{ __(
 														'Name',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</th>
 												<th className="drivevault-col-type">
 													{ __(
 														'Type',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</th>
 												<th className="drivevault-col-size">
 													{ __(
 														'Size',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													) }
 												</th>
 											</tr>
@@ -1191,7 +1191,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 																		/* translators: %s: item name */
 																		__(
 																			'Select %s',
-																			'drivevault-for-easy-digital-download'
+																			'drivevault-for-easy-digital-downloads'
 																		),
 																		file.name
 																	) }
@@ -1226,7 +1226,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 																{ file.is_folder
 																	? __(
 																			'Folder',
-																			'drivevault-for-easy-digital-download'
+																			'drivevault-for-easy-digital-downloads'
 																	  )
 																	: (
 																			file.name
@@ -1267,7 +1267,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 														/* translators: 1: count, 2: total size */
 														__(
 															'%1$d file(s) selected (%2$s)',
-															'drivevault-for-easy-digital-download'
+															'drivevault-for-easy-digital-downloads'
 														),
 														selectedFiles.length,
 														formatBytes(
@@ -1278,7 +1278,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 														/* translators: %d: count */
 														__(
 															'%d file(s) selected',
-															'drivevault-for-easy-digital-download'
+															'drivevault-for-easy-digital-downloads'
 														),
 														selectedFiles.length
 												  ) }
@@ -1289,14 +1289,14 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 											onClick={ clearSelection }
 											title={ __(
 												'Clear selection',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										>
 											<Icon name="close" size={ 13 } />
 											<span>
 												{ __(
 													'Clear',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 												) }
 											</span>
 										</button>
@@ -1310,7 +1310,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 										/>
 										{ __(
 											'Click on items to select files for download',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</span>
 								) }
@@ -1324,7 +1324,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 								>
 									{ __(
 										'Cancel',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								</button>
 
@@ -1341,13 +1341,13 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 													/* translators: %d: count */
 													__(
 														'Insert %d File(s)',
-														'drivevault-for-easy-digital-download'
+														'drivevault-for-easy-digital-downloads'
 													),
 													selectedFiles.length
 											  )
 											: __(
 													'Insert Selected',
-													'drivevault-for-easy-digital-download'
+													'drivevault-for-easy-digital-downloads'
 											  ) }
 									</span>
 								</button>
@@ -1379,7 +1379,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 									<span className="drivevault-confirm-badge">
 										{ __(
 											'Configuration Required',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										) }
 									</span>
 									<h3>
@@ -1387,7 +1387,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 											/* translators: %s: provider name */
 											__(
 												'Connect %s Account',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											),
 											pendingProvider.name
 										) }
@@ -1401,7 +1401,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 									}
 									aria-label={ __(
 										'Close dialog',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								>
 									<Icon name="close" size={ 18 } />
@@ -1414,7 +1414,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 										/* translators: %s: provider name */
 										__(
 											'%s is not connected or authorized yet. To browse and attach downloadable files, please configure your API credentials and authorize your account.',
-											'drivevault-for-easy-digital-download'
+											'drivevault-for-easy-digital-downloads'
 										),
 										pendingProvider.name
 									) }
@@ -1430,7 +1430,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 										<span>
 											{ __(
 												'Direct cloud delivery without server disk overhead',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</span>
 									</div>
@@ -1443,7 +1443,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 										<span>
 											{ __(
 												'Signed, time-expiring secure download URLs',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											) }
 										</span>
 									</div>
@@ -1460,7 +1460,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 								>
 									{ __(
 										'Cancel',
-										'drivevault-for-easy-digital-download'
+										'drivevault-for-easy-digital-downloads'
 									) }
 								</button>
 
@@ -1479,7 +1479,7 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 											/* translators: %s: provider name */
 											__(
 												'Configure %s',
-												'drivevault-for-easy-digital-download'
+												'drivevault-for-easy-digital-downloads'
 											),
 											pendingProvider.name
 										) }

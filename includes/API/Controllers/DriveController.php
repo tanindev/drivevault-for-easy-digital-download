@@ -133,7 +133,7 @@ class DriveController {
 	 */
 	public function get_files( WP_REST_Request $request ) {
 		if ( ! $this->oauth->is_connected() ) {
-			return new WP_Error( 'not_connected', __( 'Google Drive is not connected.', 'drivevault-for-easy-digital-download' ), array( 'status' => 400 ) );
+			return new WP_Error( 'not_connected', __( 'Google Drive is not connected.', 'drivevault-for-easy-digital-downloads' ), array( 'status' => 400 ) );
 		}
 
 		$args = array(
@@ -159,7 +159,7 @@ class DriveController {
 	 */
 	public function get_quota( WP_REST_Request $request ) {
 		if ( ! $this->oauth->is_connected() ) {
-			return new WP_Error( 'not_connected', __( 'Google Drive is not connected.', 'drivevault-for-easy-digital-download' ), array( 'status' => 400 ) );
+			return new WP_Error( 'not_connected', __( 'Google Drive is not connected.', 'drivevault-for-easy-digital-downloads' ), array( 'status' => 400 ) );
 		}
 
 		$result = $this->drive->get_about();
@@ -178,7 +178,7 @@ class DriveController {
 
 		return new WP_REST_Response( array(
 			'success' => true,
-			'message' => __( 'Cache cleared successfully.', 'drivevault-for-easy-digital-download' ),
+			'message' => __( 'Cache cleared successfully.', 'drivevault-for-easy-digital-downloads' ),
 		), 200 );
 	}
 
@@ -199,7 +199,7 @@ class DriveController {
 		if ( ! $this->oauth->is_connected() ) {
 			return new WP_REST_Response( array(
 				'status'  => 'unauthorized',
-				'message' => __( 'Google Drive is not connected.', 'drivevault-for-easy-digital-download' ),
+				'message' => __( 'Google Drive is not connected.', 'drivevault-for-easy-digital-downloads' ),
 			), 200 );
 		}
 
@@ -209,7 +209,7 @@ class DriveController {
 			if ( 404 === $status_code ) {
 				return new WP_REST_Response( array(
 					'status'  => 'missing',
-					'message' => __( 'File not found on Google Drive.', 'drivevault-for-easy-digital-download' ),
+					'message' => __( 'File not found on Google Drive.', 'drivevault-for-easy-digital-downloads' ),
 				), 200 );
 			}
 			return new WP_REST_Response( array(

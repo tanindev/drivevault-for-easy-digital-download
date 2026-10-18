@@ -27,8 +27,8 @@ if ( ! headers_sent() ) {
 
 $drivevault_site_name = isset( $args['site_name'] ) ? $args['site_name'] : ( ! empty( $site_name ) ? $site_name : get_bloginfo( 'name' ) );
 $drivevault_home_url  = isset( $args['home_url'] ) ? $args['home_url'] : ( ! empty( $home_url ) ? $home_url : home_url( '/' ) );
-$drivevault_title     = isset( $args['title'] ) ? $args['title'] : ( ! empty( $title ) ? $title : __( 'Download Unavailable', 'drivevault-for-easy-digital-download' ) );
-$drivevault_message   = isset( $args['message'] ) ? $args['message'] : ( ! empty( $message ) ? $message : __( 'Error accessing Google Drive file: Google Drive account is not connected.', 'drivevault-for-easy-digital-download' ) );
+$drivevault_title     = isset( $args['title'] ) ? $args['title'] : ( ! empty( $title ) ? $title : __( 'Download Unavailable', 'drivevault-for-easy-digital-downloads' ) );
+$drivevault_message   = isset( $args['message'] ) ? $args['message'] : ( ! empty( $message ) ? $message : __( 'Error accessing Google Drive file: Google Drive account is not connected.', 'drivevault-for-easy-digital-downloads' ) );
 
 $drivevault_account_url = isset( $args['account_url'] ) ? $args['account_url'] : ( ! empty( $account_url ) ? $account_url : '' );
 if ( empty( $drivevault_account_url ) ) {
@@ -79,15 +79,15 @@ wp_enqueue_style(
 		</div>
 
 		<p class="dv-help-text">
-			<?php esc_html_e( 'Please check back shortly or contact store support if you need assistance.', 'drivevault-for-easy-digital-download' ); ?>
+			<?php esc_html_e( 'Please check back shortly or contact store support if you need assistance.', 'drivevault-for-easy-digital-downloads' ); ?>
 		</p>
 
 		<div class="dv-actions">
 			<a href="<?php echo esc_url( $drivevault_account_url ); ?>" class="dv-btn dv-btn-primary">
-				<?php esc_html_e( 'My Downloads', 'drivevault-for-easy-digital-download' ); ?>
+				<?php esc_html_e( 'My Downloads', 'drivevault-for-easy-digital-downloads' ); ?>
 			</a>
 			<a href="<?php echo esc_url( $drivevault_home_url ); ?>" class="dv-btn dv-btn-secondary">
-				<?php esc_html_e( 'Return to Store', 'drivevault-for-easy-digital-download' ); ?>
+				<?php esc_html_e( 'Return to Store', 'drivevault-for-easy-digital-downloads' ); ?>
 			</a>
 		</div>
 	</div>

@@ -10,7 +10,7 @@ const DEFAULT_STATE = {
 	breadcrumbs: [
 		{
 			id: 'root',
-			name: __( 'My Drive', 'drivevault-for-easy-digital-download' ),
+			name: __( 'My Drive', 'drivevault-for-easy-digital-downloads' ),
 		},
 	],
 	searchQuery: '',
@@ -160,7 +160,7 @@ const actions = {
 					err.message ||
 						__(
 							'Failed to fetch files',
-							'drivevault-for-easy-digital-download'
+							'drivevault-for-easy-digital-downloads'
 						)
 				);
 				dispatch.setFiles( [] );
@@ -251,7 +251,7 @@ const reducer = ( state = DEFAULT_STATE, action ) => {
 			const slice = state.breadcrumbs.slice( 0, action.index + 1 );
 			const target = slice[ slice.length - 1 ] || {
 				id: 'root',
-				name: __( 'My Drive', 'drivevault-for-easy-digital-download' ),
+				name: __( 'My Drive', 'drivevault-for-easy-digital-downloads' ),
 			};
 			return {
 				...state,

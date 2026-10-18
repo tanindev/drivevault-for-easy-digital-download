@@ -2,7 +2,7 @@ const fs = require( 'fs' );
 const path = require( 'path' );
 const { execSync } = require( 'child_process' );
 
-const pluginSlug = 'drivevault-for-easy-digital-download';
+const pluginSlug = 'drivevault-for-easy-digital-downloads';
 const zipFileName = `${ pluginSlug }.zip`;
 const rootDir = path.resolve( __dirname, '..' );
 const distDir = path.resolve( rootDir, 'dist' );
@@ -68,7 +68,7 @@ const includeItems = [
 	'includes',
 	'languages',
 	'templates',
-	'drivevault-for-easy-digital-download.php',
+	'drivevault-for-easy-digital-downloads.php',
 	'readme.txt',
 	'uninstall.php',
 ];

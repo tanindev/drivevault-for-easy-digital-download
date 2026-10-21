@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       DriveVault for Easy Digital Downloads
- * Plugin URI:        https://github.com/techtanin/DriveVault-EDD
+ * Plugin URI:        https://github.com/tanindev/drivevault-for-easy-digital-downloads
  * Description:       Seamlessly attach and serve Easy Digital Downloads digital files directly from Google Drive.
  * Version:           1.0.0
  * Author:            Tanin's Dev

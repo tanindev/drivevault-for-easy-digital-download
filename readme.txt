@@ -59,7 +59,7 @@ This plugin connects to external 3rd-party services provided by Google to enable
 
 == Source Code and Build ==
 
-The unminified React source code for the admin dashboard and product file picker is open source and publicly hosted on GitHub:
+The unminified React and SCSS source code for the admin dashboard and product file picker is open source and publicly hosted on GitHub:
 * GitHub Repository: https://github.com/tanindev/drivevault-for-easy-digital-downloads
 
 To compile production assets:

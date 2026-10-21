@@ -100,41 +100,6 @@ class AdminMenu {
 			return;
 		}
 		?>
-		<style>
-			/* Explicitly remove EDD header bar, footer promos, version text, and floating flyout button */
-			#edd-header,
-			.edd-header,
-			#edd-header-wrapper,
-			.edd-footer-promotion,
-			.edd-footer-promotion-links,
-			#footer-upgrade,
-			#footer-thankyou,
-			#edd-flyout,
-			.edd-flyout-container,
-			.edd-flyout-trigger,
-			.edd-flyout-menu {
-				display: none !important;
-			}
-			/* Remove all space around content so header and layout are 100% flush with the admin sidebar */
-			body.download_page_drivevault-edd-settings #wpcontent,
-			body:has(.drivevault-admin-wrap) #wpcontent {
-				padding-left: 0 !important;
-			}
-			body.download_page_drivevault-edd-settings #wpbody,
-			body:has(.drivevault-admin-wrap) #wpbody {
-				padding-top: 0 !important;
-			}
-			body.download_page_drivevault-edd-settings #wpbody-content,
-			body:has(.drivevault-admin-wrap) #wpbody-content {
-				padding: 0 !important;
-			}
-			body.download_page_drivevault-edd-settings .wrap.drivevault-admin-wrap,
-			.wrap.drivevault-admin-wrap {
-				margin: 0 !important;
-				padding: 0 !important;
-				max-width: none !important;
-			}
-		</style>
 		<div class="wrap drivevault-admin-wrap">
 			<hr class="wp-header-end" style="display:none !important; margin:0; border:0;">
 			<div id="drivevault-notices-staging" style="display:none;"></div>

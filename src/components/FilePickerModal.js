@@ -291,9 +291,6 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 		setSelectedFiles( selectables );
 	};
 
-	// Pro capability status
-	const isPro = !! window.drivevaultData?.isProActive;
-
 	// Custom Modern Confirmation Dialog state for unauthorized providers
 	const [ showConfirmModal, setShowConfirmModal ] = useState( false );
 	const [ pendingProvider, setPendingProvider ] = useState( null );
@@ -630,10 +627,6 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 
 	// File Selection
 	const handleToggleSelect = ( file ) => {
-		if ( file.is_folder && ! isPro ) {
-			handleFolderClick( file );
-			return;
-		}
 		setSelectedFiles( ( prev ) => {
 			const exists = prev.some(
 				( f ) => f.id === file.id && f.provider === file.provider
@@ -1175,28 +1168,25 @@ export const FilePickerModal = ( { isOpen, onClose, onInsertFiles } ) => {
 																e.stopPropagation()
 															}
 														>
-															{ file.is_folder &&
-															! isPro ? null : (
-																<input
-																	type="checkbox"
-																	checked={
-																		isSelected
-																	}
-																	onChange={ () =>
-																		handleToggleSelect(
-																			file
-																		)
-																	}
-																	aria-label={ sprintf(
-																		/* translators: %s: item name */
-																		__(
-																			'Select %s',
-																			'drivevault-for-easy-digital-downloads'
-																		),
-																		file.name
-																	) }
-																/>
-															) }
+															<input
+																type="checkbox"
+																checked={
+																	isSelected
+																}
+																onChange={ () =>
+																	handleToggleSelect(
+																		file
+																	)
+																}
+																aria-label={ sprintf(
+																	/* translators: %s: item name */
+																	__(
+																		'Select %s',
+																		'drivevault-for-easy-digital-downloads'
+																	),
+																	file.name
+																) }
+															/>
 														</td>
 														<td className="drivevault-col-icon">
 															<FileIcon

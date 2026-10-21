@@ -53,7 +53,6 @@ const getInitialProvider = () => {
 };
 
 const AdminApp = () => {
-	const isProActive = Boolean( window.drivevaultData?.isProActive );
 	const [ activeTab, setActiveTab ] = useState( getInitialTab );
 	const [ activeProvider, setActiveProvider ] =
 		useState( getInitialProvider );

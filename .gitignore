@@ -1,0 +1,22 @@
+# Dependencies
+/node_modules/
+/vendor/
+/assets
+/dist-*
+
+# Build output (included in SVN, excluded from git dev)
+/build/
+
+# Env / secrets
+.env
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# WP
+*.mo
+*.zip

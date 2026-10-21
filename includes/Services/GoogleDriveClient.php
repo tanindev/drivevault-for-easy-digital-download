@@ -117,9 +117,8 @@ class GoogleDriveClient {
 			$query_parts[] = "mimeType != 'application/vnd.google-apps.folder'";
 		}
 
-		$settings                 = get_option( defined( 'DRIVEVAULT_EDD_OPTION_SETTINGS' ) ? DRIVEVAULT_EDD_OPTION_SETTINGS : 'drivevault_edd_settings', array() );
-		$has_shared_drive_support = (bool) apply_filters( 'drivevault_has_shared_drive_support', false );
-		$enable_shared_drive      = $has_shared_drive_support && ! empty( $settings['enable_shared_drive'] );
+		$settings            = get_option( defined( 'DRIVEVAULT_EDD_OPTION_SETTINGS' ) ? DRIVEVAULT_EDD_OPTION_SETTINGS : 'drivevault_edd_settings', array() );
+		$enable_shared_drive = ! empty( $settings['enable_shared_drive'] );
 
 		$params = array(
 			'q'        => implode( ' and ', $query_parts ),
@@ -245,9 +244,8 @@ class GoogleDriveClient {
 			return $cached;
 		}
 
-		$settings                 = get_option( defined( 'DRIVEVAULT_EDD_OPTION_SETTINGS' ) ? DRIVEVAULT_EDD_OPTION_SETTINGS : 'drivevault_edd_settings', array() );
-		$has_shared_drive_support = (bool) apply_filters( 'drivevault_has_shared_drive_support', false );
-		$enable_shared_drive      = $has_shared_drive_support && ! empty( $settings['enable_shared_drive'] );
+		$settings            = get_option( defined( 'DRIVEVAULT_EDD_OPTION_SETTINGS' ) ? DRIVEVAULT_EDD_OPTION_SETTINGS : 'drivevault_edd_settings', array() );
+		$enable_shared_drive = ! empty( $settings['enable_shared_drive'] );
 
 		$params = array(
 			'fields' => 'id, name, mimeType, size, modifiedTime, webContentLink, webViewLink, md5Checksum, capabilities',

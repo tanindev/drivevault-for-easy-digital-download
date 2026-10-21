@@ -62,7 +62,7 @@ if ( fs.existsSync( path.resolve( rootDir, zipFileName ) ) ) {
 
 fs.mkdirSync( pluginDistDir, { recursive: true } );
 
-// Copy essential WordPress plugin files & folders (production only - excludes raw sources and dev build configs)
+// Copy essential WordPress plugin files & folders (production build - source code is available on public GitHub repository)
 const includeItems = [
 	'assets',
 	'includes',

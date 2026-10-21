@@ -12,7 +12,6 @@ export const DownloadSettings = ( {
 	onNavigateTab,
 	onRegisterChildSave,
 } ) => {
-	const isProActive = !! window.drivevaultData?.isProActive;
 	const hasStreamSupport =
 		!! settings?.available_download_methods?.includes( 'stream' );
 	const effectiveMethod = hasStreamSupport
@@ -472,25 +471,22 @@ export const DownloadSettings = ( {
 							</>
 						) }
 
-						{ settings?.has_shared_drive_support && (
-							<>
-								<ToggleControl
-									label={ __(
-										'Enable Shared / Team Drives',
-										'drivevault-for-easy-digital-downloads'
-									) }
-									checked={ !! settings?.enable_shared_drive }
-									onChange={ ( val ) =>
-										onChange( 'enable_shared_drive', val )
-									}
-									help={ __(
-										'Allow browsing and linking downloadable files from Google Workspace Shared Drives (Team Drives).',
-										'drivevault-for-easy-digital-downloads'
-									) }
-								/>
-								<hr className="drivevault-divider" />
-							</>
-						) }
+						<ToggleControl
+							label={ __(
+								'Enable Shared / Team Drives',
+								'drivevault-for-easy-digital-downloads'
+							) }
+							checked={ !! settings?.enable_shared_drive }
+							onChange={ ( val ) =>
+								onChange( 'enable_shared_drive', val )
+							}
+							help={ __(
+								'Allow browsing and linking downloadable files from Google Workspace Shared Drives (Team Drives).',
+								'drivevault-for-easy-digital-downloads'
+							) }
+						/>
+
+						<hr className="drivevault-divider" />
 
 						<RangeControl
 							label={ __(
@@ -511,57 +507,46 @@ export const DownloadSettings = ( {
 							) }
 						/>
 
-						{ isProActive && (
-							<>
-								<hr className="drivevault-divider" />
+						<hr className="drivevault-divider" />
 
-								<RangeControl
-									label={ __(
-										'Download Activity Log Retention (Days)',
-										'drivevault-for-easy-digital-downloads'
-									) }
-									value={
-										typeof settings?.log_retention_days !==
-										'undefined'
-											? Number(
-													settings.log_retention_days
-											  )
-											: 60
-									}
-									onChange={ ( val ) =>
-										onChange( 'log_retention_days', val )
-									}
-									min={ 7 }
-									max={ 365 }
-									help={ __(
-										'Number of days download activity and audit logs are retained before automatic cleanup by daily WP-Cron.',
-										'drivevault-for-easy-digital-downloads'
-									) }
-								/>
+						<RangeControl
+							label={ __(
+								'Download Activity Log Retention (Days)',
+								'drivevault-for-easy-digital-downloads'
+							) }
+							value={
+								typeof settings?.log_retention_days !==
+								'undefined'
+									? Number( settings.log_retention_days )
+									: 60
+							}
+							onChange={ ( val ) =>
+								onChange( 'log_retention_days', val )
+							}
+							min={ 7 }
+							max={ 365 }
+							help={ __(
+								'Number of days download activity and audit logs are retained before automatic cleanup by daily WP-Cron.',
+								'drivevault-for-easy-digital-downloads'
+							) }
+						/>
 
-								<hr className="drivevault-divider" />
+						<hr className="drivevault-divider" />
 
-								<ToggleControl
-									label={ __(
-										'Anonymize Customer Download IP Addresses (GDPR Compliance)',
-										'drivevault-for-easy-digital-downloads'
-									) }
-									checked={
-										!! settings?.anonymize_download_ips
-									}
-									onChange={ ( val ) =>
-										onChange(
-											'anonymize_download_ips',
-											val
-										)
-									}
-									help={ __(
-										'Mask the last octet of customer IP addresses in download activity logs for privacy and GDPR compliance.',
-										'drivevault-for-easy-digital-downloads'
-									) }
-								/>
-							</>
-						) }
+						<ToggleControl
+							label={ __(
+								'Anonymize Customer Download IP Addresses (GDPR Compliance)',
+								'drivevault-for-easy-digital-downloads'
+							) }
+							checked={ !! settings?.anonymize_download_ips }
+							onChange={ ( val ) =>
+								onChange( 'anonymize_download_ips', val )
+							}
+							help={ __(
+								'Mask the last octet of customer IP addresses in download activity logs for privacy and GDPR compliance.',
+								'drivevault-for-easy-digital-downloads'
+							) }
+						/>
 
 						<hr className="drivevault-divider" />
 

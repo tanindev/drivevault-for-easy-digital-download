@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-18T17:50:01+00:00\n"
+"POT-Creation-Date: 2026-10-21T02:08:56+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: drivevault-for-easy-digital-downloads\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: drivevault-for-easy-digital-downloads.php
-msgid "https://github.com/techtanin/DriveVault-EDD"
+msgid "https://github.com/tanindev/drivevault-for-easy-digital-downloads"
 msgstr ""
 
 #. Description of the plugin
@@ -53,28 +53,28 @@ msgstr ""
 msgid "DriveVault"
 msgstr ""
 
-#: includes/Admin/AdminMenu.php:143
+#: includes/Admin/AdminMenu.php:108
 msgid "Loading DriveVault for Easy Digital Downloads..."
 msgstr ""
 
+#: includes/Admin/Assets.php:56
 #: includes/Admin/Assets.php:57
-#: includes/Admin/Assets.php:58
 #: src/product-picker.js:177
 #: src/product-picker.js:218
 #: src/product-picker.js:255
 msgid "Add DriveVault File"
 msgstr ""
 
-#: includes/Admin/Assets.php:59
-#: src/components/FilePickerModal.js:685
+#: includes/Admin/Assets.php:58
+#: src/components/FilePickerModal.js:678
 msgid "Select Downloadable Files from Cloud Storage"
 msgstr ""
 
-#: includes/Admin/Assets.php:60
+#: includes/Admin/Assets.php:59
 msgid "Add Google Drive File"
 msgstr ""
 
-#: includes/Admin/Assets.php:61
+#: includes/Admin/Assets.php:60
 #: src/components/common/ConnectedAccountsDropdown.js:93
 #: src/components/common/ConnectedAccountsDropdown.js:215
 #: src/components/common/ProviderIcon.js:6
@@ -83,41 +83,41 @@ msgstr ""
 msgid "Google Drive"
 msgstr ""
 
-#: includes/Admin/Assets.php:62
+#: includes/Admin/Assets.php:61
 #: src/components/DriveSearchBar.js:57
 #: src/components/FilePickerModal.js:152
 msgid "Search files in Google Drive..."
 msgstr ""
 
-#: includes/Admin/Assets.php:63
+#: includes/Admin/Assets.php:62
 msgid "Insert Selected Files"
 msgstr ""
 
-#: includes/Admin/Assets.php:64
-#: src/components/FilePickerModal.js:1325
-#: src/components/FilePickerModal.js:1461
+#: includes/Admin/Assets.php:63
+#: src/components/FilePickerModal.js:1315
+#: src/components/FilePickerModal.js:1451
 msgid "Cancel"
 msgstr ""
 
-#: includes/Admin/Assets.php:65
+#: includes/Admin/Assets.php:64
 msgid "No files found in this folder."
 msgstr ""
 
-#: includes/Admin/Assets.php:66
+#: includes/Admin/Assets.php:65
 #: src/components/Settings/ApiSettings.js:190
 msgid "Connecting..."
 msgstr ""
 
-#: includes/Admin/Assets.php:67
+#: includes/Admin/Assets.php:66
 #: src/components/common/ConnectedAccountsDropdown.js:100
 #: src/components/common/ConnectedAccountsDropdown.js:160
 #: src/components/common/ConnectedAccountsDropdown.js:243
 #: src/components/common/ConnectionBadge.js:16
-#: src/components/FilePickerModal.js:738
+#: src/components/FilePickerModal.js:731
 msgid "Connected"
 msgstr ""
 
-#: includes/Admin/Assets.php:68
+#: includes/Admin/Assets.php:67
 msgid "Disconnected"
 msgstr ""
 
@@ -148,12 +148,12 @@ msgid "Invalid download method."
 msgstr ""
 
 #: includes/API/Controllers/SettingsController.php:171
-#: src/index.js:255
+#: src/index.js:254
 msgid "Settings saved successfully."
 msgstr ""
 
 #: includes/Helpers/Formatter.php:41
-#: src/components/FilePickerModal.js:1227
+#: src/components/FilePickerModal.js:1217
 msgid "Folder"
 msgstr ""
 
@@ -250,7 +250,7 @@ msgstr ""
 msgid "Google Drive API error: %d"
 msgstr ""
 
-#: includes/Services/GoogleDriveClient.php:300
+#: includes/Services/GoogleDriveClient.php:298
 msgid "Unlimited"
 msgstr ""
 
@@ -346,7 +346,7 @@ msgid "Primary Google Cloud connection"
 msgstr ""
 
 #: src/components/common/ConnectedAccountsDropdown.js:270
-#: src/index.js:292
+#: src/index.js:291
 msgid "Quota & Status"
 msgstr ""
 
@@ -383,22 +383,22 @@ msgid "My Drive"
 msgstr ""
 
 #: src/components/DriveBreadcrumbs.js:47
-#: src/components/FilePickerModal.js:820
+#: src/components/FilePickerModal.js:813
 msgid "Breadcrumbs"
 msgstr ""
 
 #: src/components/DriveBreadcrumbs.js:96
-#: src/components/FilePickerModal.js:882
+#: src/components/FilePickerModal.js:875
 msgid "Refresh folder"
 msgstr ""
 
 #: src/components/DriveBrowser.js:54
-#: src/components/FilePickerModal.js:1062
+#: src/components/FilePickerModal.js:1055
 msgid "Error loading files"
 msgstr ""
 
 #: src/components/DriveBrowser.js:69
-#: src/components/FilePickerModal.js:1091
+#: src/components/FilePickerModal.js:1084
 msgid "No files or folders found"
 msgstr ""
 
@@ -407,22 +407,22 @@ msgid "This folder is empty or no files matched your search filter."
 msgstr ""
 
 #: src/components/DriveBrowser.js:92
-#: src/components/FilePickerModal.js:1121
+#: src/components/FilePickerModal.js:1114
 msgid "Name"
 msgstr ""
 
 #: src/components/DriveBrowser.js:98
-#: src/components/FilePickerModal.js:1127
+#: src/components/FilePickerModal.js:1120
 msgid "Type"
 msgstr ""
 
 #: src/components/DriveBrowser.js:104
-#: src/components/FilePickerModal.js:1133
+#: src/components/FilePickerModal.js:1126
 msgid "Size"
 msgstr ""
 
 #: src/components/DriveSearchBar.js:67
-#: src/components/FilePickerModal.js:925
+#: src/components/FilePickerModal.js:918
 msgid "Clear search"
 msgstr ""
 
@@ -439,167 +439,167 @@ msgid "Folders Only"
 msgstr ""
 
 #. translators: %s: provider name
-#: src/components/FilePickerModal.js:505
+#: src/components/FilePickerModal.js:502
 #, js-format
 msgid "Failed to load files from %s."
 msgstr ""
 
-#: src/components/FilePickerModal.js:697
+#: src/components/FilePickerModal.js:690
 msgid "Close modal"
 msgstr ""
 
-#: src/components/FilePickerModal.js:742
+#: src/components/FilePickerModal.js:735
 msgid "Not Connected - Click to configure"
 msgstr ""
 
 #. translators: %s: provider name
-#: src/components/FilePickerModal.js:776
+#: src/components/FilePickerModal.js:769
 #, js-format
 msgid "%s is Not Connected"
 msgstr ""
 
 #. translators: %s: provider name
-#: src/components/FilePickerModal.js:786
+#: src/components/FilePickerModal.js:779
 #, js-format
 msgid "Please connect and authorize your %s account in DriveVault settings to browse and select files."
 msgstr ""
 
 #. translators: %s: provider name
-#: src/components/FilePickerModal.js:803
-#: src/components/FilePickerModal.js:1480
+#: src/components/FilePickerModal.js:796
+#: src/components/FilePickerModal.js:1470
 #, js-format
 msgid "Configure %s"
 msgstr ""
 
-#: src/components/FilePickerModal.js:940
+#: src/components/FilePickerModal.js:933
 msgid "All Files"
 msgstr ""
 
-#: src/components/FilePickerModal.js:947
+#: src/components/FilePickerModal.js:940
 msgid "Documents"
 msgstr ""
 
-#: src/components/FilePickerModal.js:954
+#: src/components/FilePickerModal.js:947
 msgid "Archives"
 msgstr ""
 
-#: src/components/FilePickerModal.js:961
+#: src/components/FilePickerModal.js:954
 msgid "Media"
 msgstr ""
 
-#: src/components/FilePickerModal.js:968
+#: src/components/FilePickerModal.js:961
 msgid "Images"
 msgstr ""
 
-#: src/components/FilePickerModal.js:996
+#: src/components/FilePickerModal.js:989
 msgid "Select all visible downloadable files"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1003
+#: src/components/FilePickerModal.js:996
 msgid "Select All"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1016
+#: src/components/FilePickerModal.js:1009
 msgid "Sort files"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1022
+#: src/components/FilePickerModal.js:1015
 msgid "Name (A to Z)"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1028
+#: src/components/FilePickerModal.js:1021
 msgid "Name (Z to A)"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1034
+#: src/components/FilePickerModal.js:1027
 msgid "Size (Largest)"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1040
+#: src/components/FilePickerModal.js:1033
 msgid "Size (Smallest)"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1076
+#: src/components/FilePickerModal.js:1069
 msgid "Try Again"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1098
+#: src/components/FilePickerModal.js:1091
 msgid "No items matched your search query."
 msgstr ""
 
-#: src/components/FilePickerModal.js:1103
+#: src/components/FilePickerModal.js:1096
 msgid "No files match this category filter in this folder."
 msgstr ""
 
-#: src/components/FilePickerModal.js:1107
+#: src/components/FilePickerModal.js:1100
 msgid "This folder is empty."
 msgstr ""
 
 #. translators: %s: item name
-#: src/components/FilePickerModal.js:1192
+#: src/components/FilePickerModal.js:1183
 #, js-format
 msgid "Select %s"
 msgstr ""
 
 #. translators: 1: count, 2: total size
-#: src/components/FilePickerModal.js:1268
+#: src/components/FilePickerModal.js:1258
 #, js-format
 msgid "%1$d file(s) selected (%2$s)"
 msgstr ""
 
 #. translators: %d: count
-#: src/components/FilePickerModal.js:1279
+#: src/components/FilePickerModal.js:1269
 #, js-format
 msgid "%d file(s) selected"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1290
+#: src/components/FilePickerModal.js:1280
 msgid "Clear selection"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1297
+#: src/components/FilePickerModal.js:1287
 msgid "Clear"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1311
+#: src/components/FilePickerModal.js:1301
 msgid "Click on items to select files for download"
 msgstr ""
 
 #. translators: %d: count
-#: src/components/FilePickerModal.js:1342
+#: src/components/FilePickerModal.js:1332
 #, js-format
 msgid "Insert %d File(s)"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1348
+#: src/components/FilePickerModal.js:1338
 msgid "Insert Selected"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1380
+#: src/components/FilePickerModal.js:1370
 msgid "Configuration Required"
 msgstr ""
 
 #. translators: %s: provider name
-#: src/components/FilePickerModal.js:1388
+#: src/components/FilePickerModal.js:1378
 #, js-format
 msgid "Connect %s Account"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1402
+#: src/components/FilePickerModal.js:1392
 msgid "Close dialog"
 msgstr ""
 
 #. translators: %s: provider name
-#: src/components/FilePickerModal.js:1415
+#: src/components/FilePickerModal.js:1405
 #, js-format
 msgid "%s is not connected or authorized yet. To browse and attach downloadable files, please configure your API credentials and authorize your account."
 msgstr ""
 
-#: src/components/FilePickerModal.js:1431
+#: src/components/FilePickerModal.js:1421
 msgid "Direct cloud delivery without server disk overhead"
 msgstr ""
 
-#: src/components/FilePickerModal.js:1444
+#: src/components/FilePickerModal.js:1434
 msgid "Signed, time-expiring secure download URLs"
 msgstr ""
 
@@ -701,138 +701,138 @@ msgstr ""
 msgid "Must match the Authorized redirect URI in your Google Cloud Console credentials."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:27
+#: src/components/Settings/DownloadSettings.js:26
 msgid "Download & Delivery Options"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:33
+#: src/components/Settings/DownloadSettings.js:32
 msgid "Configure how customer downloadable files are streamed and cached."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:44
+#: src/components/Settings/DownloadSettings.js:43
 msgid "Customer Download Delivery Method"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:50
+#: src/components/Settings/DownloadSettings.js:49
 msgid "Choose how customer download requests are processed and delivered after purchase verification."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:112
+#: src/components/Settings/DownloadSettings.js:111
 msgid "Direct Cloud Redirect"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:118
+#: src/components/Settings/DownloadSettings.js:117
 msgid "Fast Cloud CDN Transfer"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:141
-#: src/components/Settings/DownloadSettings.js:331
+#: src/components/Settings/DownloadSettings.js:140
+#: src/components/Settings/DownloadSettings.js:330
 msgid "Active Method"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:148
-#: src/components/Settings/DownloadSettings.js:338
+#: src/components/Settings/DownloadSettings.js:147
+#: src/components/Settings/DownloadSettings.js:337
 msgid "Select"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:158
+#: src/components/Settings/DownloadSettings.js:157
 msgid "Customers are securely verified by Easy Digital Downloads and redirected directly to time-limited signed links from Google Drive."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:179
+#: src/components/Settings/DownloadSettings.js:178
 msgid "Zero web server bandwidth & memory load"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:199
+#: src/components/Settings/DownloadSettings.js:198
 msgid "Direct high-speed transfer via cloud edge"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:219
+#: src/components/Settings/DownloadSettings.js:218
 msgid "Standard across all active cloud providers"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:301
+#: src/components/Settings/DownloadSettings.js:300
 msgid "Server-Side Proxy Streaming"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:307
+#: src/components/Settings/DownloadSettings.js:306
 msgid "Full Link Concealment"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:348
+#: src/components/Settings/DownloadSettings.js:347
 msgid "Streams downloads in chunks directly through your WordPress server, completely hiding external cloud URLs and supporting resumable transfers."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:369
+#: src/components/Settings/DownloadSettings.js:368
 msgid "100% URL concealment (never exposes drive links)"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:389
+#: src/components/Settings/DownloadSettings.js:388
 msgid "HTTP Range 206 chunked resumable downloads"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:409
+#: src/components/Settings/DownloadSettings.js:408
 msgid "Configurable 1–32 MB memory buffer size"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:424
+#: src/components/Settings/DownloadSettings.js:423
 msgid "Cloud Storage Disconnected / Inaccessible Error Message"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:430
-#: src/components/Settings/DownloadSettings.js:443
+#: src/components/Settings/DownloadSettings.js:429
+#: src/components/Settings/DownloadSettings.js:442
 msgid "Error accessing file: Cloud storage account is not connected."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:439
+#: src/components/Settings/DownloadSettings.js:438
 msgid "Message displayed to customers when attempting to download a cloud file while the storage provider is disconnected or inaccessible."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:456
+#: src/components/Settings/DownloadSettings.js:455
 msgid "Stream Chunk Buffer Size (MB)"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:466
+#: src/components/Settings/DownloadSettings.js:465
 msgid "Memory buffer size in megabytes used when streaming large files from cloud storage."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:478
+#: src/components/Settings/DownloadSettings.js:475
 msgid "Enable Shared / Team Drives"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:486
+#: src/components/Settings/DownloadSettings.js:483
 msgid "Allow browsing and linking downloadable files from Google Workspace Shared Drives (Team Drives)."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:496
+#: src/components/Settings/DownloadSettings.js:492
 msgid "Drive Directory Cache TTL (Minutes)"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:508
+#: src/components/Settings/DownloadSettings.js:504
 msgid "How long Google Drive file listings are cached in WordPress transients before refetching."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:519
+#: src/components/Settings/DownloadSettings.js:513
 msgid "Download Activity Log Retention (Days)"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:536
+#: src/components/Settings/DownloadSettings.js:528
 msgid "Number of days download activity and audit logs are retained before automatic cleanup by daily WP-Cron."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:545
+#: src/components/Settings/DownloadSettings.js:537
 msgid "Anonymize Customer Download IP Addresses (GDPR Compliance)"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:558
+#: src/components/Settings/DownloadSettings.js:545
 msgid "Mask the last octet of customer IP addresses in download activity logs for privacy and GDPR compliance."
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:569
+#: src/components/Settings/DownloadSettings.js:554
 msgid "Erase Plugin Data on Uninstall"
 msgstr ""
 
-#: src/components/Settings/DownloadSettings.js:577
+#: src/components/Settings/DownloadSettings.js:562
 msgid "Check to delete stored Google tokens, settings, and download logs if the plugin is deleted."
 msgstr ""
 
@@ -950,43 +950,43 @@ msgstr ""
 msgid "Active"
 msgstr ""
 
-#: src/index.js:196
+#: src/index.js:195
 msgid "Connected to Google Drive successfully!"
 msgstr ""
 
-#: src/index.js:223
+#: src/index.js:222
 msgid "Failed to complete Google authentication."
 msgstr ""
 
-#: src/index.js:264
+#: src/index.js:263
 msgid "Failed to save settings."
 msgstr ""
 
-#: src/index.js:276
+#: src/index.js:275
 msgid "API & Connection"
 msgstr ""
 
-#: src/index.js:284
+#: src/index.js:283
 msgid "Download Settings"
 msgstr ""
 
-#: src/index.js:319
+#: src/index.js:318
 msgid "Easy Digital Downloads Cloud Storage Integration"
 msgstr ""
 
-#: src/index.js:325
+#: src/index.js:324
 msgid "Connect Google Drive to Easy Digital Downloads."
 msgstr ""
 
-#: src/index.js:358
+#: src/index.js:357
 msgid "Authenticating with Google Cloud..."
 msgstr ""
 
-#: src/index.js:413
+#: src/index.js:412
 msgid "Saving..."
 msgstr ""
 
-#: src/index.js:423
+#: src/index.js:422
 msgid "Save Settings"
 msgstr ""
 

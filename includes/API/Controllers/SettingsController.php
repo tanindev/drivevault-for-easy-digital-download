@@ -210,10 +210,7 @@ class SettingsController {
 			'drivevault_edd_allowed_download_methods',
 			apply_filters( 'drivevault_allowed_download_methods', array( 'redirect' ) )
 		);
-		$settings['has_shared_drive_support'] = (bool) apply_filters(
-			'drivevault_edd_has_shared_drive_support',
-			apply_filters( 'drivevault_has_shared_drive_support', false )
-		);
+		$settings['has_shared_drive_support'] = true;
 
 		return $settings;
 	}

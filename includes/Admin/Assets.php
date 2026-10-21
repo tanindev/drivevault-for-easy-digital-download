@@ -52,7 +52,6 @@ class Assets {
 			'gdriveSettingsUrl' => admin_url( 'edit.php?post_type=download&page=' . DRIVEVAULT_EDD_PAGE_SLUG ),
 			'pluginUrl'         => DRIVEVAULT_EDD_URL,
 			'assetsUrl'         => DRIVEVAULT_EDD_ASSETS_URL,
-			'isProActive'       => false,
 			'i18n'              => array(
 				'addDriveVaultFile' => __( 'Add DriveVault File', 'drivevault-for-easy-digital-downloads' ),
 				'chooseFromCloud'   => __( 'Add DriveVault File', 'drivevault-for-easy-digital-downloads' ),

@@ -97,7 +97,7 @@ Yes, both plugins operate with separate namespaces and option stores, allowing t
 1. Google Drive Settings & Account Connection Dashboard in Easy Digital Downloads.
 2. Modern React Google Drive File Picker modal inside the Edit Download editor.
 3. Downloadable Files metabox with attached Google Drive files and "Add DriveVault File" action.
-4. Native Easy Digital Downloads Download Logs tracking customer downloads delivered directly from Google Drive.
+4. Google Drive Storage Quota metrics and system environment diagnostics.
 
 == Changelog ==
 
